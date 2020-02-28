@@ -1,0 +1,2246 @@
+--------- beginning of main
+I/installd(    0): installd firing up
+D/        (    0): vbox_graph_mode=1600x900
+I/Netd    (    0): Netd 1.0 starting
+D/TetherController(    0): Setting IP forward enable = 0
+E/Netd    (    0): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (    0): Failed to open /proc/sys/net/ipv6/conf/eth1/accept_ra_rt_table: No such file or directory
+E/Netd    (    0): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (    0): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (    0): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (    0): Failed to open /proc/sys/net/ipv6/conf/wlan0/accept_ra_rt_table: No such file or directory
+I/        ( 1449): debuggerd: Jul 24 2019 01:33:06
+--------- beginning of system
+I/Vold    ( 1442): Vold 2.1 (the revenge) firing up
+D/Vold    ( 1442): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+I/lowmemorykiller( 1440): Using in-kernel low memory killer interface
+I/keystore( 1455): SELinux: Keystore SELinux is disabled.
+I/SurfaceFlinger( 1443): SurfaceFlinger is starting
+I/SurfaceFlinger( 1443): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/libEGL  ( 1443): loaded /system/lib/egl/libEGL_adreno.so
+I/mediaserver( 1453): ServiceManager: 0xb5826620
+I/AudioFlinger( 1453): Using default 3000 mSec as standby time.
+I/ServiceManager( 1453): Waiting for service batterystats...
+D/        ( 1443): HostConnection::get() New Host Connection established 0xb683a140, tid 1443
+D/libEGL  ( 1443): loaded /system/lib/egl/libGLESv1_CM_adreno.so
+D/libEGL  ( 1443): loaded /system/lib/egl/libGLESv2_adreno.so
+E/SurfaceFlinger( 1443): hwcomposer module not found
+W/SurfaceFlinger( 1443): no suitable EGLConfig found, trying a simpler query
+I/SurfaceFlinger( 1443): EGL information:
+I/SurfaceFlinger( 1443): vendor    : Android
+I/SurfaceFlinger( 1443): version   : 1.4 Android META-EGL
+I/SurfaceFlinger( 1443): extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_image_base EGL_KHR_gl_texture_2D_image EGL_KHR_fence_sync EGL_KHR_create_context EGL_ANDROID_image_native_buffer EGL_ANDROID_recordable 
+I/SurfaceFlinger( 1443): Client API: OpenGL_ES
+I/SurfaceFlinger( 1443): EGLSurface: 8-8-8-8, config=0x8
+D/AndroidRuntime( 1457): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+I/SurfaceFlinger( 1443): OpenGL ES informations:
+I/SurfaceFlinger( 1443): vendor    : ARM
+I/SurfaceFlinger( 1443): renderer  : Mali-450 MP
+I/SurfaceFlinger( 1443): version   : OpenGL ES 2.0
+I/SurfaceFlinger( 1443): extensions: GL_EXT_debug_marker GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 GL_OES_texture_half_float GL_EXT_robustness GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float ANDROID_gles_max_version_3_1 GL_OES_vertex_array_object
+I/SurfaceFlinger( 1443): GL_MAX_TEXTURE_SIZE = 32768
+I/SurfaceFlinger( 1443): GL_MAX_VIEWPORT_DIMS = 32768
+D/SurfaceFlinger( 1443): setOrientation, mFbdev=0xb68613c0, mFbDev->setOrientation=0xb7020060, orientation=0
+I/gralloc_nox( 1443): setOrientation: orientation=0
+D/SurfaceFlinger( 1443): Set power mode=2, type=0 flinger=0xb685d000
+D/SurfaceFlinger( 1443): shader cache generated - 24 shaders in 61.750050 ms
+D/libEGL  ( 1568): loaded /system/lib/egl/libEGL_adreno.so
+D/        ( 1568): HostConnection::get() New Host Connection established 0xb582d0f0, tid 1578
+D/AndroidRuntime( 1457): CheckJNI is OFF
+I/art     ( 1457): option[0]=-Xzygote
+I/art     ( 1457): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     ( 1457): option[2]=exit
+I/art     ( 1457): option[3]=vfprintf
+I/art     ( 1457): option[4]=sensitiveThread
+I/art     ( 1457): option[5]=-verbose:gc
+I/art     ( 1457): option[6]=-Xms16m
+I/art     ( 1457): option[7]=-Xmx256m
+I/art     ( 1457): option[8]=-XX:mainThreadStackSize=24K
+I/art     ( 1457): option[9]=-XX:HeapGrowthLimit=192m
+I/art     ( 1457): option[10]=-XX:HeapMinFree=512k
+I/art     ( 1457): option[11]=-XX:HeapMaxFree=8m
+I/art     ( 1457): option[12]=-XX:HeapTargetUtilization=0.75
+I/art     ( 1457): option[13]=-Xgenregmap
+I/art     ( 1457): option[14]=-Xgc:precise
+I/art     ( 1457): option[15]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     ( 1457): option[16]=-Xlockprofthreshold:500
+I/art     ( 1457): option[17]=-Ximage-compiler-option
+I/art     ( 1457): option[18]=--runtime-arg
+I/art     ( 1457): option[19]=-Ximage-compiler-option
+I/art     ( 1457): option[20]=-Xms64m
+I/art     ( 1457): option[21]=-Ximage-compiler-option
+I/art     ( 1457): option[22]=--runtime-arg
+I/art     ( 1457): option[23]=-Ximage-compiler-option
+I/art     ( 1457): option[24]=-Xmx64m
+I/art     ( 1457): option[25]=-Ximage-compiler-option
+I/art     ( 1457): option[26]=--image-classes=/system/etc/preloaded-classes
+I/art     ( 1457): option[27]=-Xcompiler-option
+I/art     ( 1457): option[28]=--runtime-arg
+I/art     ( 1457): option[29]=-Xcompiler-option
+I/art     ( 1457): option[30]=-Xms64m
+I/art     ( 1457): option[31]=-Xcompiler-option
+I/art     ( 1457): option[32]=--runtime-arg
+I/art     ( 1457): option[33]=-Xcompiler-option
+I/art     ( 1457): option[34]=-Xmx512m
+I/art     ( 1457): option[35]=-Duser.language=zh
+I/art     ( 1457): option[36]=-Duser.region=CN
+I/art     ( 1457): option[37]=-XX:NativeBridge=libnb.so
+D/libEGL  ( 1568): loaded /system/lib/egl/libGLESv1_CM_adreno.so
+D/libEGL  ( 1568): loaded /system/lib/egl/libGLESv2_adreno.so
+D/        ( 1443): HostConnection::get() New Host Connection established 0xb602d0e0, tid 1542
+D/        ( 1443): HostConnection::get() New Host Connection established 0xb683ab00, tid 1544
+E/memtrack( 1457): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 1457): failed to load memtrack module: -2
+I/SamplingProfilerIntegration( 1457): Profiling disabled.
+D/Zygote  ( 1457): begin preload
+I/Zygote  ( 1457): Preloading classes...
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 798(36KB) AllocSpace objects, 0(0B) LOS objects, 95% free, 44KB/1068KB, paused 34us total 2.840ms
+I/art     ( 1457): Counter: 1
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansGujarati-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansGujarati-Bold.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansGujaratiUI-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansGujaratiUI-Bold.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansGurmukhi-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansGurmukhi-Bold.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansGurmukhiUI-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansGurmukhiUI-Bold.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansSinhala-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansSinhala-Bold.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansThaana-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansThaana-Bold.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansCham-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansCham-Bold.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansBalinese-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansBatak-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansBuginese-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansBuhid-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansCanadianAboriginal-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansCherokee-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansCoptic-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansGlagolitic-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansHanunoo-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansJavanese-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansKayahLi-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansLepcha-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansLimbu-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansMeeteiMayek-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansOlChiki-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansRejang-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansSaurashtra-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansSundanese-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansSylotiNagri-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansTagbanwa-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansTaiTham-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansTaiViet-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansTifinagh-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansYi-Regular.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/Lohit-Odia.ttf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansHans-Regular.otf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansHant-Regular.otf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansJP-Regular.otf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansKR-Regular.otf
+E/Minikin ( 1457): addFont failed to create font /system/fonts/NotoSansTaiLe-Regular.ttf
+I/art     ( 1457): Thread[1,tid=1457,WaitingForJniOnLoad,Thread*=0xb3c27800,peer=0x12c31100,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+D/MtpDeviceJNI( 1457): register_android_mtp_MtpDevice
+I/art     ( 1457): Thread[1,tid=1457,WaitingForJniOnLoad,Thread*=0xb3c27800,peer=0x12c31100,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+I/art     ( 1457): Thread[1,tid=1457,WaitingForJniOnLoad,Thread*=0xb3c27800,peer=0x12c31100,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+W/linker  ( 1457): libavutil.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+W/linker  ( 1457): libavformat.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+W/linker  ( 1457): libavcodec.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 1233(68KB) AllocSpace objects, 0(0B) LOS objects, 68% free, 461KB/1485KB, paused 36us total 3.711ms
+E/EmojiFactory_jni( 1457): Failed to load libemoji.so: dlopen failed: library "libemoji.so" not found
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 5914(256KB) AllocSpace objects, 0(0B) LOS objects, 45% free, 1236KB/2MB, paused 34us total 5.288ms
+I/System  ( 1457): Loaded time zone names for "" in 17ms (16ms in ICU)
+I/System  ( 1457): Loaded time zone names for "en_US" in 11ms (9ms in ICU)
+I/System  ( 1457): Loaded time zone names for "zh_CN" in 11ms (11ms in ICU)
+I/Zygote  ( 1457): ...preloaded 3005 classes in 344ms.
+I/art     ( 1457): VMRuntime.preloadDexCaches starting
+I/art     ( 1457): VMRuntime.preloadDexCaches strings total=215141 before=39108 after=39108
+I/art     ( 1457): VMRuntime.preloadDexCaches types total=18367 before=6397 after=6433
+I/art     ( 1457): VMRuntime.preloadDexCaches fields total=85658 before=32274 after=32608
+I/art     ( 1457): VMRuntime.preloadDexCaches methods total=151952 before=66893 after=67794
+I/art     ( 1457): VMRuntime.preloadDexCaches finished
+I/art     ( 1457): Counter: 0
+I/art     ( 1457): Counter: 1
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 5954(386KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 1549KB/2MB, paused 35us total 5.259ms
+D/idmap   ( 1653): error: no read access to /vendor/overlay: No such file or directory
+I/Zygote  ( 1457): Preloading resources...
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 173(7KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 2MB/4MB, paused 38us total 3.642ms
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 520(26KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 3MB/5MB, paused 42us total 5.257ms
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 461(20KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 5MB/8MB, paused 45us total 3.004ms
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 651(37KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 6MB/10MB, paused 47us total 2.935ms
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 1036(46KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 7MB/12MB, paused 51us total 3.005ms
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 1102(45KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 8MB/13MB, paused 53us total 3.029ms
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 6524(242KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 9MB/15MB, paused 57us total 4.777ms
+I/Zygote  ( 1457): ...preloaded 343 resources in 146ms.
+I/Zygote  ( 1457): ...preloaded 41 resources in 2ms.
+I/art     ( 1457): Counter: 0
+I/Zygote  ( 1457): Preloading shared libraries...
+D/Zygote  ( 1457): end preload
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 1752(95KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 9MB/15MB, paused 56us total 3.463ms
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 543(22KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 9MB/15MB, paused 55us total 3.144ms
+I/ServiceManager( 1453): Waiting for service batterystats...
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 39% free, 9MB/15MB, paused 55us total 3.049ms
+I/Zygote  ( 1457): System server process 1677 has been created
+I/Zygote  ( 1457): Accepting command socket connections
+V/NatController( 1448): runCmd(/system/bin/iptables -F natctrl_FORWARD) res=0
+V/NatController( 1448): runCmd(/system/bin/iptables -A natctrl_FORWARD -j DROP) res=0
+V/NatController( 1448): runCmd(/system/bin/iptables -t nat -F natctrl_nat_POSTROUTING) res=0
+I/InstallerConnection( 1677): disconnecting...
+V/NatController( 1448): runCmd(/system/bin/iptables -F natctrl_tether_counters) res=1
+I/SystemServer( 1677): Entered the Android system server!
+V/NatController( 1448): runCmd(/system/bin/iptables -X natctrl_tether_counters) res=1
+V/Fingerprint-JNI( 1677): FingerprintManager JNI ready.
+D/SensorService( 1677): nuSensorService starting...
+V/NatController( 1448): runCmd(/system/bin/iptables -N natctrl_tether_counters) res=0
+D/SensorService( 1677): new thread SensorEventAckReceiver
+D/SensorService( 1677): nuSensorService thread starting...
+V/NatController( 1448): runCmd(/system/bin/iptables -t mangle -A natctrl_mangle_FORWARD -p tcp --tcp-flags SYN SYN -j TCPMSS --clamp-mss-to-pmtu) res=0
+I/SystemServiceManager( 1677): Starting com.android.server.pm.Installer
+I/Installer( 1677): Waiting for installd to be ready.
+I/InstallerConnection( 1677): connecting...
+I/installd( 1454): new connection
+I/SystemServiceManager( 1677): Starting com.android.server.am.ActivityManagerService$Lifecycle
+I/ActivityManager( 1677): Memory class: 192
+I/IntentFirewall( 1677): Read new rules (A:0 B:0 S:0)
+D/AppOps  ( 1677): AppOpsService published
+I/SystemServiceManager( 1677): Starting com.android.server.power.PowerManagerService
+W/libsuspend( 1677): Error writing 'on' to /sys/power/state: Invalid argument
+I/libsuspend( 1677): Selected wakeup count
+I/SystemServiceManager( 1677): Starting com.android.server.display.DisplayManagerService
+I/SystemServiceManager( 1677): Starting phase 100
+I/DisplayManagerService( 1677): Display device added: DisplayDeviceInfo{"内置屏幕": uniqueId="local:0", 1600 x 900, 60.000004 fps, supportedRefreshRates [60.000004], density 320, 320.0 x 320.0 dpi, appVsyncOff 0, presDeadline 17666666, touch INTERNAL, rotation 0, type BUILT_IN, state UNKNOWN, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
+I/SystemServer( 1677): Package Manager
+W/SystemConfig( 1677): No directory /system/etc/sysconfig, skipping
+D/SELinuxMMAC( 1677): Using policy file /system/etc/security/mac_permissions.xml
+D/PackageManager( 1677): No files in app dir /vendor/overlay
+W/PackageParser( 1677): No actions in intent filter at /system/priv-app/Contacts/Contacts.apk Binary XML file line #356
+W/ResourceType( 1677): Failure getting entry for 0x7f080277 (t=7 e=631) (error -75)
+W/PackageParser( 1677): Unknown element under <intent-filter>: android at /system/priv-app/Telecom/Telecom.apk Binary XML file line #232
+W/PackageParser( 1677): No actions in intent filter at /system/app/Bluetooth/Bluetooth.apk Binary XML file line #209
+W/PackageParser( 1677): No actions in intent filter at /system/app/CMFileManager/CMFileManager.apk Binary XML file line #166
+W/PackageParser( 1677): Unknown element under <application>: permission at /system/app/Gallery2/Gallery2.apk Binary XML file line #242
+W/PackageParser( 1677): Unknown element under <application>: permission at /system/app/Gallery2/Gallery2.apk Binary XML file line #245
+D/PackageManager( 1677): No files in app dir /system/vendor/app
+D/PackageManager( 1677): No files in app dir /oem/app
+W/PackageManager( 1677): Package com.tencent.mm desires unavailable shared library com.google.android.maps; ignoring!
+W/PackageManager( 1677): Package com.tencent.mm desires unavailable shared library com.sec.android.app.multiwindow; ignoring!
+W/PackageManager( 1677): Package com.tencent.mm desires unavailable shared library com.here.android; ignoring!
+W/PackageManager( 1677): Package com.tencent.mm desires unavailable shared library soterkeystore; ignoring!
+D/PackageManager( 1677): No files in app dir /data/app-private
+W/PackageManager( 1677): Package com.tencent.mm desires unavailable shared library com.google.android.maps; ignoring!
+W/PackageManager( 1677): Package com.tencent.mm desires unavailable shared library com.sec.android.app.multiwindow; ignoring!
+W/PackageManager( 1677): Package com.tencent.mm desires unavailable shared library com.here.android; ignoring!
+W/PackageManager( 1677): Package com.tencent.mm desires unavailable shared library soterkeystore; ignoring!
+W/PackageManager( 1677): Package com.android.gallery3d desires unavailable shared library com.google.android.media.effects; ignoring!
+W/PackageManager( 1677): Package com.android.gallery3d desires unavailable shared library com.google.android.media.effects; ignoring!
+I/PackageManager( 1677): Adjusting ABI for : com.bignox.google.installer to x86
+I/PackageManager( 1677): Adjusting ABI for : com.android.inputdevices to x86
+I/PackageManager( 1677): Adjusting ABI for : com.vphone.launcher to x86
+I/PackageManager( 1677): Adjusting ABI for : com.android.keychain to x86
+I/PackageManager( 1677): Adjusting ABI for : com.android.inputservice to x86
+I/PackageManager( 1677): Adjusting ABI for : com.android.server.telecom to x86
+I/PackageManager( 1677): Adjusting ABI for : com.bignox.app.store.hd to x86
+I/PackageManager( 1677): Adjusting ABI for : com.android.providers.settings to x86
+I/PackageManager( 1677): Adjusting ABI for : com.android.settings to x86
+I/PackageManager( 1677): Adjusting ABI for : com.android.location.fused to x86
+I/PackageManager( 1677): Adjusting ABI for : com.vphone.helper to x86
+I/PackageManager( 1677): Time to scan packages: 0.202 seconds
+W/PackageManager( 1677): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+W/PackageManager( 1677): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+W/PackageManager( 1677): Unknown permission com.huawei.authentication.HW_ACCESS_AUTH_SERVICE in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.tencent.mm.location.permission.SEND_VIEW in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.huawei.android.launcher.permission.CHANGE_BADGE in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission android.permission.WRITE_APP_BADGE in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.google.android.c2dm.permission.RECEIVE in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.bbk.launcher2.permission.READ_SETTINGS in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.android.vending.BILLING in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission android.permission.USE_FINGERPRINT in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission android.permission.REQUEST_INSTALL_PACKAGES in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.soter.permission.ACCESS_SOTER_KEYSTORE in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission android.permission.USE_FACERECOGNITION in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+W/PackageManager( 1677): Unknown permission com.cyanogenmod.filemanager.permissions.READ_THEME in package com.cyanogenmod.filemanager
+W/PackageManager( 1677): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.settings
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.settings
+W/PackageManager( 1677): Not granting permission android.permission.MOUNT_UNMOUNT_FILESYSTEMS to package com.baidu.listenerapk (protectionLevel=18 flags=0x8be44)
+W/PackageManager( 1677): Unknown permission com.android.smspush.WAPPUSH_MANAGER_BIND in package com.android.phone
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.bignox.app.store.hd
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.bignox.app.store.hd
+W/PackageManager( 1677): Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.bluetooth
+W/PackageManager( 1677): Unknown permission android.permission.MMS_SEND_OUTBOX_MSG in package com.android.bluetooth
+I/art     ( 1677): Explicit concurrent mark sweep GC freed 34560(2MB) AllocSpace objects, 27(432KB) LOS objects, 33% free, 9MB/14MB, paused 124us total 21.234ms
+I/SystemServer( 1677): User Service
+I/lowmemorykiller( 1440): ActivityManager connected
+I/SystemServiceManager( 1677): Starting com.android.server.lights.LightsService
+I/SystemServiceManager( 1677): Starting com.android.server.BatteryService
+I/SystemServiceManager( 1677): Starting com.android.server.usage.UsageStatsService
+I/SystemServiceManager( 1677): Starting com.android.server.webkit.WebViewUpdateService
+I/SystemServer( 1677): Reading configuration...
+I/SystemServer( 1677): Scheduling Policy
+I/SystemServiceManager( 1677): Starting com.android.server.telecom.TelecomLoaderService
+I/SystemServer( 1677): Telephony Registry
+I/SystemServer( 1677): Entropy Mixer
+I/EntropyMixer( 1677): Writing entropy...
+I/SystemServer( 1677): Account Manager
+I/SystemServer( 1677): Content Manager
+I/SystemServer( 1677): System Content Providers
+W/SettingsProvider( 1677): set ANDROID_ID from persist.nox.androidid
+I/SystemServer( 1677): Vibrator Service
+I/SystemServer( 1677): Consumer IR Service
+E/ConsumerIrService( 1677): Can't open consumer IR HW Module, error: -2
+I/SystemServiceManager( 1677): Starting com.android.server.AlarmManagerService
+D/AlarmManagerService( 1677): Kernel timezone updated to -480 minutes west of GMT
+I/SystemServer( 1677): Init Watchdog
+I/SystemServer( 1677): Input Manager
+I/InputManager( 1677): Initializing input manager, mUseDevInputEventForAudioJack=false
+I/SystemServer( 1677): Window Manager
+I/WindowManager( 1677): No existing display settings /data/system/display_settings.xml; starting empty
+D/PermissionCache( 1443): checking android.permission.ACCESS_SURFACE_FLINGER for uid=1000 => granted (176 us)
+I/InputManager( 1677): Starting input manager
+I/SystemServer( 1677): Bluetooth Manager Service
+D/BluetoothManagerService( 1677): Loading stored name and address
+D/BluetoothManagerService( 1677): Stored bluetooth Name=Nexus 6,Address=22:22:39:BC:53:54
+I/SystemServer( 1677): Input Method Service
+W/EventHub( 1677): Unable to disable kernel key repeat for /dev/input/event4: Function not implemented
+I/EventHub( 1677): removing ALPHAKEY class from /dev/input/event4
+I/EventHub( 1677): New device: id=1, fd=78, path='/dev/input/event4', name='Android_Input', classes=0x15, configuration='/system/usr/idc/Android_Input.idc', keyLayout='/system/usr/keylayout/Android_Input.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+E/EventHub( 1677): could not get driver version for /dev/input/mouse0, Not a typewriter
+W/InputMethodManagerService( 1677): Couldn't create dir.: /data/system/inputmethod
+I/SystemServer( 1677): Accessibility Manager
+D/SurfaceFlinger( 1443): setOrientation, mFbdev=0xb68613c0, mFbDev->setOrientation=0xb7020060, orientation=0
+I/gralloc_nox( 1443): setOrientation: orientation=0
+I/SystemServer( 1677): Mount Service
+D/MountService( 1677): got storage path: /mnt/sdcard description: 内部存储设备 primary: true removable: false emulated: true mtpReserve: 100 allowMassStorage: false maxFileSize: 0
+D/MountService( 1677): addVolumeLocked() StorageVolume:
+D/MountService( 1677):     mStorageId=65537 mPath=/storage/emulated/0 mDescriptionId=17040812 
+D/MountService( 1677):     mPrimary=true mRemovable=false mEmulated=true mMtpReserveSpace=100 
+D/MountService( 1677):     mAllowMassStorage=false mMaxFileSize=0 mOwner=UserHandle{0} mUuid=null 
+D/MountService( 1677):     mUserLabel=null mState=null 
+I/SystemServer( 1677): LockSettingsService
+I/SystemServiceManager( 1677): Starting com.android.server.devicepolicy.DevicePolicyManagerService$Lifecycle
+I/SystemServer( 1677): Status Bar
+I/SystemServer( 1677): Clipboard Service
+I/SystemServer( 1677): NetworkManagement Service
+I/iptables( 1448): iptables: Invalid argument. Run `dmesg' for more information.
+I/iptables( 1448): iptables terminated by exit(1)
+E/BandwidthController( 1448): runIptablesCmd(): res=1 status=256 failed /system/bin/iptables -A bw_INPUT -m owner --socket-exists
+E/NetdConnector( 1677): Communications error: java.io.IOException: Connection refused
+E/NetdConnector( 1677): Error in NativeDaemonConnector: java.io.IOException: Connection refused
+I/ip6tables( 1448): ip6tables: Invalid argument. Run `dmesg' for more information.
+E/MountService( 1677): Error processing initial volume state
+E/MountService( 1677): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.storage.StorageVolume.getPath()' on a null object reference
+E/MountService( 1677): 	at com.android.server.MountService.updatePublicVolumeState(MountService.java:746)
+E/MountService( 1677): 	at com.android.server.MountService.access$1700(MountService.java:119)
+E/MountService( 1677): 	at com.android.server.MountService$3.run(MountService.java:840)
+I/ip6tables( 1448): ip6tables terminated by exit(1)
+E/BandwidthController( 1448): runIptablesCmd(): res=1 status=256 failed /system/bin/ip6tables -A bw_INPUT -m owner --socket-exists
+I/PackageManager( 1677): No secure containers found
+W/PackageManager( 1677): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+W/PackageManager( 1677): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+W/PackageManager( 1677): Unknown permission com.huawei.authentication.HW_ACCESS_AUTH_SERVICE in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.tencent.mm.location.permission.SEND_VIEW in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.huawei.android.launcher.permission.CHANGE_BADGE in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission android.permission.WRITE_APP_BADGE in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.google.android.c2dm.permission.RECEIVE in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.bbk.launcher2.permission.READ_SETTINGS in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.android.vending.BILLING in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission android.permission.USE_FINGERPRINT in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission android.permission.REQUEST_INSTALL_PACKAGES in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.soter.permission.ACCESS_SOTER_KEYSTORE in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission android.permission.USE_FACERECOGNITION in package com.tencent.mm
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+W/PackageManager( 1677): Unknown permission com.cyanogenmod.filemanager.permissions.READ_THEME in package com.cyanogenmod.filemanager
+W/PackageManager( 1677): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.settings
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.settings
+W/PackageManager( 1677): Not granting permission android.permission.MOUNT_UNMOUNT_FILESYSTEMS to package com.baidu.listenerapk (protectionLevel=18 flags=0x8be44)
+W/PackageManager( 1677): Unknown permission com.android.smspush.WAPPUSH_MANAGER_BIND in package com.android.phone
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.bignox.app.store.hd
+W/PackageManager( 1677): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.bignox.app.store.hd
+W/PackageManager( 1677): Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.bluetooth
+W/PackageManager( 1677): Unknown permission android.permission.MMS_SEND_OUTBOX_MSG in package com.android.bluetooth
+D/OpenGLRenderer( 1677): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+W/WindowManager( 1677): updateFocusedWindowLocked, focusedAppToken is null.
+E/NetdConnector( 1677): Communications error: java.io.IOException: Connection refused
+E/NetdConnector( 1677): Error in NativeDaemonConnector: java.io.IOException: Connection refused
+D/EventHub( 1677): No input device configuration file found for device 'gpio-keys'.
+W/EventHub( 1677): Unable to disable kernel key repeat for /dev/input/event3: Function not implemented
+I/EventHub( 1677): removing ALPHAKEY class from /dev/input/event3
+I/EventHub( 1677): New device: id=2, fd=92, path='/dev/input/event3', name='gpio-keys', classes=0x81, configuration='', keyLayout='/system/usr/keylayout/gpio-keys.kl', keyCharacterMap='/system/usr/keychars/gpio-keys.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+D/EventHub( 1677): No input device configuration file found for device 'Sleep Button'.
+W/EventHub( 1677): Unable to disable kernel key repeat for /dev/input/event1: Function not implemented
+I/EventHub( 1677): removing ALPHAKEY class from /dev/input/event1
+I/EventHub( 1677): New device: id=3, fd=93, path='/dev/input/event1', name='Sleep Button', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+D/EventHub( 1677): No input device configuration file found for device 'Power Button'.
+W/EventHub( 1677): Unable to disable kernel key repeat for /dev/input/event0: Function not implemented
+I/EventHub( 1677): removing ALPHAKEY class from /dev/input/event0
+I/EventHub( 1677): New device: id=4, fd=94, path='/dev/input/event0', name='Power Button', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+D/EventHub( 1677): No input device configuration file found for device 'Video Bus'.
+W/EventHub( 1677): Unable to disable kernel key repeat for /dev/input/event2: Function not implemented
+I/EventHub( 1677): removing ALPHAKEY class from /dev/input/event2
+I/EventHub( 1677): New device: id=5, fd=95, path='/dev/input/event2', name='Video Bus', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false, wakeMechanism=EPOLLWAKEUP, usingClockIoctl=true
+E/EventHub( 1677): could not get driver version for /dev/input/mice, Not a typewriter
+E/NetdConnector( 1677): Communications error: java.io.IOException: Connection refused
+E/NetdConnector( 1677): Error in NativeDaemonConnector: java.io.IOException: Connection refused
+I/NOX     ( 1767): Starting deamon
+D/libEGL  ( 1677): loaded /system/lib/egl/libEGL_adreno.so
+E/NetdConnector( 1677): Communications error: java.io.IOException: Connection refused
+E/NetdConnector( 1677): Error in NativeDaemonConnector: java.io.IOException: Connection refused
+D/        ( 1677): HostConnection::get() New Host Connection established 0xa201f4b0, tid 1773
+D/libEGL  ( 1677): loaded /system/lib/egl/libGLESv1_CM_adreno.so
+D/libEGL  ( 1677): loaded /system/lib/egl/libGLESv2_adreno.so
+I/OpenGLRenderer( 1677): Initialized EGL, version 1.4
+I/InputReader( 1677): Device added: id=-1, name='Virtual', sources=0x00000301
+I/InputReader( 1677): Device added: id=5, name='Video Bus', sources=0x00000101
+I/InputReader( 1677): Device added: id=4, name='Power Button', sources=0x00000101
+I/InputReader( 1677): Device added: id=3, name='Sleep Button', sources=0x00000101
+I/InputReader( 1677): Device added: id=2, name='gpio-keys', sources=0x80000101
+I/InputReader( 1677):   Touch device 'Android_Input' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+I/InputReader( 1677): Device added: id=1, name='Android_Input', sources=0x00001103
+I/InputReader( 1677): Reconfiguring input devices.  changes=0x00000004
+I/InputReader( 1677): Device reconfigured: id=1, name='Android_Input', size 1600x900, orientation 0, mode 1, display id 0
+D/OpenGLRenderer( 1677): Enabling debug mode 0
+I/SurfaceFlinger( 1443): Boot is finished (1804 ms)
+E/NetdConnector( 1677): Communications error: java.io.IOException: Connection refused
+E/NetdConnector( 1677): Error in NativeDaemonConnector: java.io.IOException: Connection refused
+E/Netd    ( 1448): cannot find interface dummy0
+E/Netd    ( 1448): Unable to create netlink socket: Protocol not supported
+E/Netd    ( 1448): Unable to open quota2 logging socket
+D/MDnsDS  ( 1448): MDnsSdListener::Hander starting up
+D/MDnsDS  ( 1448): MDnsSdListener starting to monitor
+D/MDnsDS  ( 1448): Going to poll with pollCount 1
+D/        ( 1443): HostConnection::get() New Host Connection established 0xb602d280, tid 1763
+I/SystemServer( 1677): Text Service Manager Service
+W/TextServicesManagerService( 1677): no available spell checker services found
+I/SystemServer( 1677): Network Score Service
+I/SystemServer( 1677): NetworkStats Service
+I/SystemServer( 1677): NetworkPolicy Service
+I/SystemServiceManager( 1677): Starting com.android.server.wifi.p2p.WifiP2pService
+I/WifiP2pService( 1677): Registering wifip2p
+I/SystemServiceManager( 1677): Starting com.android.server.wifi.WifiService
+E/WifiConfigStore( 1677): associatedPartialScanPeriodMilli set to 20000
+D/WifiController( 1677): isAirplaneModeOn = false, isWifiEnabled = true, isScanningAvailable = false
+I/WifiService( 1677): Registering wifi
+I/SystemServiceManager( 1677): Starting com.android.server.wifi.WifiScanningService
+I/WifiScanningService( 1677): Creating wifiscanner
+I/WifiScanningService( 1677): Starting wifiscanner
+I/SystemServiceManager( 1677): Starting com.android.server.wifi.RttService
+I/RttService( 1677): Creating rttmanager
+I/RttService( 1677): Starting rttmanager
+I/SystemServer( 1677): Connectivity Service
+D/ConnectivityService( 1677): ConnectivityService starting up
+D/ConnectivityService( 1677): wifiOnly=false
+E/ConnectivityService( 1677): Ignoring protectedNetwork 10
+E/ConnectivityService( 1677): Ignoring protectedNetwork 11
+E/ConnectivityService( 1677): Ignoring protectedNetwork 12
+E/ConnectivityService( 1677): Ignoring protectedNetwork 14
+E/ConnectivityService( 1677): Ignoring protectedNetwork 15
+I/SystemServer( 1677): Network Service Discovery Service
+D/NsdService( 1677): Network service discovery enabled true
+I/SystemServer( 1677): UpdateLock Service
+I/SystemServiceManager( 1677): Starting com.android.server.notification.NotificationManagerService
+I/SystemServiceManager( 1677): Starting com.android.server.storage.DeviceStorageMonitorService
+I/SystemServer( 1677): Location Manager
+I/SystemServer( 1677): Country Detector
+I/SystemServer( 1677): Search Service
+I/SystemServer( 1677): DropBox Service
+I/SystemServer( 1677): Wallpaper Service
+I/SystemServer( 1677): Audio Service
+I/ServiceManager( 1677): Waiting for service media.audio_policy...
+W/TelecomManager( 1677): Telecom Service not found.
+I/CameraService( 1453): CameraService started (pid=1453)
+E/CameraService( 1453): Could not load camera HAL module
+I/AudioPolicyService( 1453): AudioPolicyService CSTOR in new mode
+I/AudioPolicyManager( 1453): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+I/AudioFlinger( 1453): loadHwModule() Loaded primary audio interface from NOX audio HW HAL (audio) handle 1
+I/AudioFlinger( 1453): HAL output buffer size 880 frames, normal sink buffer size 1056 frames
+I/AudioMixer( 1453): found effect "Multichannel Downmix To Stereo" from The Android Open Source Project
+E/MonoPipe( 1453): Failed to fetch local time frequency when constructing a MonoPipe (res = -32).  getNextWriteTimestamp calls will be non-functional
+I/AudioFlinger( 1453): Using module 1 has the primary audio interface
+I/AudioFlinger( 1453): AudioFlinger's thread 0xb58b9000 ready to run
+I/AudioFlinger( 1453): AudioFlinger's thread 0xb5959000 ready to run
+E/SoundTriggerHwService( 1453): couldn't load sound trigger module sound_trigger.primary (No such file or directory)
+I/SystemServiceManager( 1677): Starting com.android.server.DockObserver
+W/DockObserver( 1677): This kernel does not have dock station support
+I/SystemServer( 1677): Wired Accessory Manager
+W/WiredAccessoryManager( 1677): This kernel does not have wired headset support
+W/WiredAccessoryManager( 1677): This kernel does not have usb audio support
+W/WiredAccessoryManager( 1677): This kernel does not have HDMI audio support
+I/SystemServiceManager( 1677): Starting com.android.server.usb.UsbService$Lifecycle
+I/SystemServer( 1677): Serial Service
+I/SystemServiceManager( 1677): Starting com.android.server.twilight.TwilightService
+I/SystemServiceManager( 1677): Starting com.android.server.UiModeManagerService
+I/SystemServiceManager( 1677): Starting com.android.server.job.JobSchedulerService
+I/SystemServiceManager( 1677): Starting com.android.server.backup.BackupManagerService$Lifecycle
+I/SystemServiceManager( 1677): Starting com.android.server.appwidget.AppWidgetService
+I/SystemServiceManager( 1677): Starting com.android.server.voiceinteraction.VoiceInteractionManagerService
+W/SoundTriggerHelper( 1677): listModules status=0, # of modules=0
+I/SystemServer( 1677): DiskStats Service
+I/SystemServer( 1677): SamplingProfiler Service
+I/SystemServer( 1677): NetworkTimeUpdateService
+I/SystemServer( 1677): CommonTimeManagementService
+I/SystemServer( 1677): CertBlacklister
+I/SystemServiceManager( 1677): Starting com.android.server.dreams.DreamManagerService
+I/SystemServer( 1677): Assets Atlas Service
+I/SystemServiceManager( 1677): Starting com.android.server.print.PrintManagerService
+I/SystemServiceManager( 1677): Starting com.android.server.restrictions.RestrictionsManagerService
+I/SystemServiceManager( 1677): Starting com.android.server.media.MediaSessionService
+I/SystemServer( 1677): Media Router Service
+I/SystemServiceManager( 1677): Starting com.android.server.trust.TrustManagerService
+I/SystemServiceManager( 1677): Starting com.android.server.fingerprint.FingerprintService
+V/Fingerprint-JNI( 1677): nativeInit()
+V/Fingerprint-JNI( 1677): nativeOpenHal()
+E/Fingerprint-JNI( 1677): Can't open fingerprint HW Module, error: -2
+I/SystemServer( 1677): BackgroundDexOptService
+I/SystemServiceManager( 1677): Starting com.android.server.pm.LauncherAppsService
+I/SystemServiceManager( 1677): Starting com.android.server.media.projection.MediaProjectionManagerService
+I/WindowManager( 1677): SAFE MODE not enabled
+I/SystemServiceManager( 1677): Starting com.android.server.MmsServiceBroker
+E/SQLiteLog( 1677): (283) recovered 16 frames from WAL file /data/system/locksettings.db-wal
+E/LockSettingsStorage( 1677): Cannot read file java.io.FileNotFoundException: /data/system/password.key: open failed: ENOENT (No such file or directory)
+E/LockSettingsStorage( 1677): Cannot read file java.io.FileNotFoundException: /data/system/gesture.key: open failed: ENOENT (No such file or directory)
+I/SystemServiceManager( 1677): Starting phase 480
+D/AssetAtlas( 1677): Loaded configuration: SliceMinArea (960x1216) flags=0x2 count=446
+I/SystemServiceManager( 1677): Starting phase 500
+I/WifiService( 1677): WifiService starting up with Wi-Fi enabled
+D/WifiService( 1677): setWifiEnabled: true pid=1677, uid=1000
+E/WifiService( 1677): Invoking mWifiStateMachine.setWifiEnabled
+D/WifiController( 1677): WifiController msg { when=0 what=155656 target=com.android.internal.util.StateMachine$SmHandler } deferred for 500ms
+D/WifiService( 1677): New client listening to asynchronous messages
+I/WifiScanningService( 1677): Registering wifiscanner
+D/WifiScanningService( 1677): New client, channel: null messenger: null
+D/        ( 1677): HostConnection::get() New Host Connection established 0xa2135b40, tid 1815
+I/RttService( 1677): Registering rttmanager
+D/WifiChangeStateMachine( 1677): Entering IdleState
+D/WifiScanningService( 1677): DefaultState
+I/ActivityManager( 1677): Config changes=200 {1.0 ?mcc?mnc zh_CN ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?touch ?keyb/?/? ?nav/? s.2}
+V/BackupManagerService( 1677): No ancestral data
+D/BackupManagerService( 1677): Now staging backup of com.android.browser
+D/BackupManagerService( 1677): Now staging backup of android
+D/BackupManagerService( 1677): Now staging backup of com.android.providers.settings
+D/BackupManagerService( 1677): Now staging backup of com.android.sharedstoragebackup
+D/BackupManagerService( 1677): Now staging backup of com.android.providers.userdictionary
+V/BackupManagerService( 1677): Starting with transport android/com.android.internal.backup.LocalTransport
+V/BackupManagerService( 1677): Found transports: 1
+I/BackupManagerService( 1677): Binding to transport host ComponentInfo{android/com.android.internal.backup.LocalTransportService}
+I/BackupManagerService( 1677): Found stale backup journal, scheduling
+I/UsageStatsService( 1677): User[0] Rollover scheduled @ 2020-02-27 08:00:00(1582761600000)
+I/DisplayManagerService( 1677): Display device changed: DisplayDeviceInfo{"内置屏幕": uniqueId="local:0", 1600 x 900, 60.000004 fps, supportedRefreshRates [60.000004], density 320, 320.0 x 320.0 dpi, appVsyncOff 0, presDeadline 17666666, touch INTERNAL, rotation 0, type BUILT_IN, state ON, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
+D/SurfaceFlinger( 1443): Set power mode=2, type=0 flinger=0xb685d000
+D/SurfaceFlinger( 1443): Screen type=0 is already mode=2
+I/ActivityManager( 1677): System now ready
+I/SystemServer( 1677): Making services ready
+I/SystemServiceManager( 1677): Starting phase 550
+I/SystemServer( 1677): WebViewFactory preparation
+I/Zygote  ( 1677): Process: zygote socket opened, supported ABIS: x86,armeabi-v7a,armeabi
+D/AssetAtlas( 1677): Rendered atlas in 65.05ms (5.09+59.96ms)
+I/ContactLocale( 1998): AddressBook Labels [zh-CN]: [, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, Α, Β, Γ, Δ, Ε, Ζ, Η, Θ, Ι, Κ, Λ, Μ, Ν, Ξ, Ο, Π, Ρ, Σ, Τ, Υ, Φ, Χ, Ψ, Ω, , А, Б, В, Г, Д, Ђ, Е, Є, Ж, З, И, І, Ї, Й, Ј, К, Л, Љ, М, Н, Њ, О, П, Р, С, Т, Ћ, У, Ф, Х, Ц, Ч, Џ, Ш, Щ, Ю, Я, , א, ב, ג, ד, ה, ו, ז, ח, ט, י, כ, ל, מ, נ, ס, ע, פ, צ, ק, ר, ש, ת, , ا, ب, ت, ث, ج, ح, خ, د, ذ, ر, ز, س, ش, ص, ض, ط, ظ, ع, غ, ف, ق, ك, ل, م, ن, ه, و, ي, , ก, ข, ฃ, ค, ฅ, ฆ, ง, จ, ฉ, ช, ซ, ฌ, ญ, ฎ, ฏ, ฐ, ฑ, ฒ, ณ, ด, ต, ถ, ท, ธ, น, บ, ป, ผ, ฝ, พ, ฟ, ภ, ม, ย, ร, ฤ, ล, ฦ, ว, ศ, ษ, ส, ห, ฬ, อ, ฮ, , ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ, , あ, か, さ, た, な, は, ま, や, ら, わ, #, ]
+V/WebViewFactory( 1825): RelroFileCreator (64bit = false),  32-bit lib: /system/app/webview/lib/x86/libwebviewchromium.so, 64-bit lib: 
+W/linker  ( 1825): libwebviewchromium.so: unused DT entry: type 0x6ffffef5 arg 0x4ae8
+W/linker  ( 1825): libwebviewchromium.so: unused DT entry: type 0x6ffffffe arg 0x4a88
+W/linker  ( 1825): libwebviewchromium.so: unused DT entry: type 0x6fffffff arg 0x3
+I/ActivityManager( 1677): Start proc 1825:WebViewLoader-x86/1037 [android.webkit.WebViewFactory$RelroFileCreator] for 
+D/TelephonyDebugService( 1908): TelephonyDebugService()
+I/ActivityManager( 1677): Start proc 1841:com.android.systemui/u0a10 for service com.android.systemui/.SystemUIService
+W/MountService( 1677): Duplicate state transition (mounted -> mounted) for /storage/emulated/0
+D/NetworkManagementService( 1677): not enabling bandwidth control
+D/WifiService( 1677): New client listening to asynchronous messages
+D/Launcher.LauncherProvider( 1943): 11683562 - initializeMaxScreenId(): 1
+I/art     ( 1825): System.exit called, status: 0
+I/AndroidRuntime( 1825): VM exiting with result code 0, cleanup skipped.
+W/NetworkStats( 1677): bandwidth controls disabled, unable to track stats
+W/NetworkPolicy( 1677): bandwidth controls disabled, unable to enforce policy
+I/Telephony( 1908): PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+D/WifiService( 1677): New client listening to asynchronous messages
+V/Launcher( 1943): LauncherAppState inited
+D/BluetoothManagerService( 1677): Message: 20
+D/BluetoothManagerService( 1677): Added callback: android.bluetooth.IBluetoothManagerCallback$Stub$Proxy@2bdc785a:true
+V/SystemUIService( 1841): Starting SystemUI services.
+D/BluetoothAdapter( 1841): 1034248408: getState() :  mService = null. Returning STATE_OFF
+D/BluetoothAdapter( 1841): 1034248408: getState() :  mService = null. Returning STATE_OFF
+D/BluetoothManagerService( 1677): Message: 30
+D/PermissionMonitor( 1677): Monitoring
+D/PermissionMonitor( 1677): Users: 1, Apps: 33
+D/BluetoothManagerService( 1677): Message: 30
+I/SystemServiceManager( 1677): Starting phase 600
+E/BluetoothA2dpSink( 1841): Could not bind to Bluetooth A2DP Service with Intent { act=android.bluetooth.IBluetoothA2dpSink }
+D/BluetoothManagerService( 1677): Message: 30
+E/BluetoothAvrcpController( 1841): Could not bind to Bluetooth AVRCP Controller Service with Intent { act=android.bluetooth.IBluetoothAvrcpController }
+D/BluetoothManagerService( 1677): Message: 20
+D/BluetoothManagerService( 1677): Added callback: android.bluetooth.BluetoothAdapter$1@10cf9da1:true
+D/BluetoothManagerService( 1677): Message: 30
+D/BluetoothManagerService( 1677): Trying to bind to profile: 1, while Bluetooth was disabled
+I/BackupManagerService( 1677): Backup enabled => false
+I/BackupManagerService( 1677): Opting out of backup
+D/BluetoothManagerService( 1677): Message: 30
+E/BluetoothHeadsetClient( 1841): Could not bind to Bluetooth Headset Client Service with Intent { act=android.bluetooth.IBluetoothHeadsetClient }
+D/BluetoothManagerService( 1677): Message: 30
+E/InputMethodManagerService( 1677): Ignoring setImeWindowStatus due to an invalid token. uid:1000 token:null
+D/BluetoothMap( 1841): Create BluetoothMap proxy object
+D/BluetoothManagerService( 1677): Message: 30
+D/BluetoothManagerService( 1677): Message: 30
+D/BluetoothManagerService( 1677): Trying to bind to profile: 1, while Bluetooth was disabled
+D/BluetoothManagerService( 1677): Message: 30
+I/art     ( 1872): Late-enabling -Xcheck:jni
+I/ActivityManager( 1677): Start proc 1872:com.android.inputservice/1000 for service com.android.inputservice/.InputService
+V/InputMethodManagerService( 1677): Adding window token: android.os.Binder@3dfd5c7c
+D/BluetoothManagerService( 1677): Message: 30
+D/ConnectivityService( 1677): listenForNetwork for NetworkRequest [ id=2, legacyType=-1, [] ]
+D/Launcher.Model( 1943): Old launcher provider: content://com.android.launcher2.settings/favorites?notify=true
+D/Launcher.Model( 1943): Old launcher provider does not exist.
+W/linker  ( 1453): libavutil.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+W/linker  ( 1453): libavformat.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+I/CameraManagerGlobal( 1841): getCameraService: Reconnecting to camera service
+E/CameraService( 1453): getCameraVendorTagDescriptor: camera hardware module doesn't exist
+E/CameraMetadata-JNI( 1841): CameraMetadata_setupGlobalVendorTagDescriptor: Failed to setup vendor tag descriptors, received error No such device (-19)
+W/CameraManagerGlobal( 1841): Failed to set up vendor tags: The camera device is removable and has been disconnected from the Android device, or the camera service has shut down the connection due to a higher-priority access request for the camera device.
+V/FingerprintService( 1677): startListening(android.service.fingerprint.IFingerprintServiceReceiver$Stub$Proxy@825b762)
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 0
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+W/linker  ( 1453): libavcodec.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:17 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+W/ServiceWatcher( 1677): com.google.android.gms not found
+W/ServiceWatcher( 1677): com.google.android.gms not found
+W/LocationManagerService( 1677): no network location provider found
+W/ServiceWatcher( 1677): com.google.android.gms not found
+W/ServiceWatcher( 1677): com.google.android.gms not found
+E/LocationManagerService( 1677): no geocoder provider found
+E/FlpHardwareProvider( 1677): Error hw_get_module 'flp': -2
+E/LocationManagerService( 1677): FLP HAL not supported
+W/ServiceWatcher( 1677): com.google.android.gms not found
+E/LocationManagerService( 1677): Unable to bind FLP Geofence proxy.
+E/ActivityRecognitionHardware( 1677): Error hw_get_module: -2
+E/LocationManagerService( 1677): Hardware Activity-Recognition not supported.
+I/art     ( 1677): Explicit concurrent mark sweep GC freed 13657(1019KB) AllocSpace objects, 8(128KB) LOS objects, 33% free, 13MB/19MB, paused 715us total 44.439ms
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+I/CommonTimeManagementService( 1677): No common time service detected on this platform.  Common time services will be unavailable.
+E/WVMExtractor( 1453): Failed to open libwvm.so: dlopen failed: library "libwvm.so" not found
+I/FFmpegExtractor( 1453): android-source:0xb5850b40
+I/FFmpegExtractor( 1453): android-source:0xb5036140
+D/FFMPEG  ( 1453): android source begin open
+D/FFMPEG  ( 1453): android open, url: android-source:0xb5036140
+D/FFMPEG  ( 1453): ffmpeg open android data source success, source ptr: 0xb5036140
+D/FFMPEG  ( 1453): android source open success
+D/FFMPEG  ( 1453): android source begin open
+D/FFMPEG  ( 1453): android open, url: android-source:0xb5850b40
+D/FFMPEG  ( 1453): ffmpeg open android data source success, source ptr: 0xb5850b40
+D/FFMPEG  ( 1453): android source open success
+I/FFMPEG  ( 1453): Input #0, ogg, from 'android-source:0xb5036140':
+I/FFMPEG  ( 1453):   Duration: 00:00:00.09, start: 0.000000, bitrate: 527 kb/s
+I/FFMPEG  ( 1453):     Stream #0:0: Audio: vorbis, 44100 Hz, stereo, fltp, 160 kb/s
+I/FFmpegExtractor( 1453): FFmpegExtrator, url: android-source:0xb5036140, format_name: ogg, format_long_name: Ogg
+I/FFmpegExtractor( 1453): list the formats suppoted by ffmpeg: 
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): adjust mime(application/ogg -> audio/vorbis)
+D/FFmpegExtractor( 1453): suppoted codec(vorbis) by official Stagefright
+D/FFMPEG  ( 1453): android source close
+I/FFmpegExtractor( 1453): sniff through BetterSniffFFMPEG success
+D/FFmpegExtractor( 1453): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+I/InputReader( 1677): Reconfiguring input devices.  changes=0x00000030
+I/FFMPEG  ( 1453): Input #0, ogg, from 'android-source:0xb5850b40':
+I/MmsServiceBroker( 1677): Delay connecting to MmsService until an API is called
+I/FFMPEG  ( 1453):   Duration: 00:00:00.23, start: 0.000000, bitrate: 293 kb/s
+I/FFMPEG  ( 1453):     Stream #0:0: Audio: vorbis, 44100 Hz, stereo, fltp, 160 kb/s
+I/FFmpegExtractor( 1453): FFmpegExtrator, url: android-source:0xb5850b40, format_name: ogg, format_long_name: Ogg
+I/FFmpegExtractor( 1453): list the formats suppoted by ffmpeg: 
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): adjust mime(application/ogg -> audio/vorbis)
+D/FFmpegExtractor( 1453): suppoted codec(vorbis) by official Stagefright
+D/FFMPEG  ( 1453): android source close
+I/FFmpegExtractor( 1453): sniff through BetterSniffFFMPEG success
+D/FFmpegExtractor( 1453): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+W/VoiceInteractionManagerService( 1677): no available voice interaction services found for user 0
+W/VoiceInteractionManagerService( 1677): no available voice recognition services found for user 0
+D/NuPlayerDriver( 1453): start(0xb584fbe0)
+I/GenericSource( 1453): start
+D/NuPlayerDriver( 1453): start(0xb584fdc0)
+I/GenericSource( 1453): start
+W/linker  ( 1453): libswresample.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegAudio( 1453): SoftFFmpegAudio component: OMX.ffmpeg.wma.decoder mMode: 4
+W/linker  ( 1453): libswresample.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegAudio( 1453): SoftFFmpegAudio component: OMX.ffmpeg.ra.decoder mMode: 5
+I/ActivityManager( 1677): Start proc 1908:com.android.phone/1001 for added application com.android.phone
+I/ActivityManager( 1677): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.vphone.launcher/.Launcher} from uid 0 on display 0
+W/ImageLoader( 1943): diskCache() and diskCacheFileNameGenerator() calls overlap each other
+W/linker  ( 1453): libswresample.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegAudio( 1453): SoftFFmpegAudio component: OMX.ffmpeg.flac.decoder mMode: 6
+W/ContextImpl( 1943): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1706 android.content.ContextWrapper.startService:516 com.vphone.launcher.LauncherApplication.onCreate:119 android.app.Instrumentation.callApplicationOnCreate:1012 android.app.ActivityThread.handleBindApplication:4592 
+V/WindowManager( 1677): addAppToken: AppWindowToken{207c7b59 token=Token{342003a0 ActivityRecord{f0cf4a3 u0 com.vphone.launcher/.Launcher t1}}} to stack=0 task=1 at 0
+W/linker  ( 1453): libswresample.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegAudio( 1453): SoftFFmpegAudio component: OMX.ffmpeg.mp2.decoder mMode: 7
+W/linker  ( 1453): libswresample.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegAudio( 1453): SoftFFmpegAudio component: OMX.ffmpeg.ac3.decoder mMode: 8
+W/linker  ( 1453): libswresample.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegAudio( 1453): SoftFFmpegAudio component: OMX.ffmpeg.ape.decoder mMode: 9
+W/linker  ( 1453): libswresample.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegAudio( 1453): SoftFFmpegAudio component: OMX.ffmpeg.dts.decoder mMode: 10
+E/OMX     ( 1453): FAILED to allocate omx component 'OMX.ffmpeg.pcm.decoder'
+W/linker  ( 1453): libswresample.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegAudio( 1453): SoftFFmpegAudio component: OMX.ffmpeg.atrial.decoder mMode: 11
+W/linker  ( 1453): libswscale.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegVideo( 1453): SoftFFmpegVideo component: OMX.ffmpeg.h264.decoder mMode: 0 appData: 0xb5877b00
+E/OMXNodeInstance( 1453): getParameter(9:ffmpeg.h264.decoder, ParamVideoProfileLevelQuerySupported(0x600000f)) ERROR: UnsupportedIndex(0x8000101a)
+W/OMXNodeInstance( 1453): [9:ffmpeg.h264.decoder] component does not support metadata mode; using fallback
+E/OMXNodeInstance( 1453): getExtensionIndex(9:ffmpeg.h264.decoder, OMX.google.android.index.prepareForAdaptivePlayback) ERROR: UnsupportedIndex(0x8000101a)
+W/linker  ( 1453): libswscale.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegVideo( 1453): SoftFFmpegVideo component: OMX.ffmpeg.mpeg2v.decoder mMode: 0 appData: 0xb5877b00
+E/SoftFFmpegVideo( 1453): unsupported role: video_decoder.mpeg2
+E/OMXNodeInstance( 1453): setParameter(a:ffmpeg.mpeg2v.decoder, ParamStandardComponentRole(0x1000017)) ERROR: Undefined(0x80001001)
+W/OMXCodec( 1453): Failed to set standard component role 'video_decoder.mpeg2'.
+E/OMXNodeInstance( 1453): getParameter(a:ffmpeg.mpeg2v.decoder, ParamVideoProfileLevelQuerySupported(0x600000f)) ERROR: UnsupportedIndex(0x8000101a)
+W/OMXNodeInstance( 1453): [a:ffmpeg.mpeg2v.decoder] component does not support metadata mode; using fallback
+E/OMXNodeInstance( 1453): getExtensionIndex(a:ffmpeg.mpeg2v.decoder, OMX.google.android.index.prepareForAdaptivePlayback) ERROR: UnsupportedIndex(0x8000101a)
+W/linker  ( 1453): libswscale.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegVideo( 1453): SoftFFmpegVideo component: OMX.ffmpeg.wmv.decoder mMode: 0 appData: 0xb5877b00
+E/OMXNodeInstance( 1453): getParameter(b:ffmpeg.wmv.decoder, ParamVideoProfileLevelQuerySupported(0x600000f)) ERROR: UnsupportedIndex(0x8000101a)
+W/OMXNodeInstance( 1453): [b:ffmpeg.wmv.decoder] component does not support metadata mode; using fallback
+E/OMXNodeInstance( 1453): getExtensionIndex(b:ffmpeg.wmv.decoder, OMX.google.android.index.prepareForAdaptivePlayback) ERROR: UnsupportedIndex(0x8000101a)
+I/art     ( 1943): Late-enabling -Xcheck:jni
+W/linker  ( 1453): libswscale.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+I/ActivityManager( 1677): Start proc 1943:com.vphone.launcher/1000 for activity com.vphone.launcher/.Launcher
+D/SoftFFmpegVideo( 1453): SoftFFmpegVideo component: OMX.ffmpeg.rv.decoder mMode: 0 appData: 0xb5877b00
+V/ActivityManager( 1677): Display changed displayId=0
+V/ActivityManager( 1677): Display changed displayId=0
+E/OMXNodeInstance( 1453): getParameter(c:ffmpeg.rv.decoder, ParamVideoProfileLevelQuerySupported(0x600000f)) ERROR: UnsupportedIndex(0x8000101a)
+W/OMXNodeInstance( 1453): [c:ffmpeg.rv.decoder] component does not support metadata mode; using fallback
+E/OMXNodeInstance( 1453): getExtensionIndex(c:ffmpeg.rv.decoder, OMX.google.android.index.prepareForAdaptivePlayback) ERROR: UnsupportedIndex(0x8000101a)
+D/WifiScanningService( 1677): SCAN_AVAILABLE : 1
+D/RttService( 1677): SCAN_AVAILABLE : 1
+D/WifiScanningService( 1677): DefaultState got{ when=0 what=160007 target=com.android.internal.util.StateMachine$SmHandler }
+D/RttService( 1677): DefaultState got{ when=-1ms what=160513 target=com.android.internal.util.StateMachine$SmHandler }
+W/ActivityManager( 1677): Unable to start service Intent { cmp=com.android.printspooler/.model.PrintSpoolerService } U=0: not found
+W/linker  ( 1453): libswscale.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegVideo( 1453): SoftFFmpegVideo component: OMX.ffmpeg.vc1.decoder mMode: 0 appData: 0xb5877b00
+E/OMXNodeInstance( 1453): getParameter(d:ffmpeg.vc1.decoder, ParamVideoProfileLevelQuerySupported(0x600000f)) ERROR: UnsupportedIndex(0x8000101a)
+W/OMXNodeInstance( 1453): [d:ffmpeg.vc1.decoder] component does not support metadata mode; using fallback
+E/OMXNodeInstance( 1453): getExtensionIndex(d:ffmpeg.vc1.decoder, OMX.google.android.index.prepareForAdaptivePlayback) ERROR: UnsupportedIndex(0x8000101a)
+W/linker  ( 1453): libswscale.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegVideo( 1453): SoftFFmpegVideo component: OMX.ffmpeg.flv1.decoder mMode: 0 appData: 0xb5877b00
+E/OMXNodeInstance( 1453): getParameter(e:ffmpeg.flv1.decoder, ParamVideoProfileLevelQuerySupported(0x600000f)) ERROR: UnsupportedIndex(0x8000101a)
+W/OMXNodeInstance( 1453): [e:ffmpeg.flv1.decoder] component does not support metadata mode; using fallback
+E/OMXNodeInstance( 1453): getExtensionIndex(e:ffmpeg.flv1.decoder, OMX.google.android.index.prepareForAdaptivePlayback) ERROR: UnsupportedIndex(0x8000101a)
+V/ActivityManager( 1677): Display changed displayId=0
+W/linker  ( 1453): libswscale.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegVideo( 1453): SoftFFmpegVideo component: OMX.ffmpeg.divx.decoder mMode: 0 appData: 0xb5877b00
+E/OMXNodeInstance( 1453): getParameter(f:ffmpeg.divx.decoder, ParamVideoProfileLevelQuerySupported(0x600000f)) ERROR: UnsupportedIndex(0x8000101a)
+W/OMXNodeInstance( 1453): [f:ffmpeg.divx.decoder] component does not support metadata mode; using fallback
+E/OMXNodeInstance( 1453): getExtensionIndex(f:ffmpeg.divx.decoder, OMX.google.android.index.prepareForAdaptivePlayback) ERROR: UnsupportedIndex(0x8000101a)
+W/linker  ( 1453): libswscale.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegVideo( 1453): SoftFFmpegVideo component: OMX.ffmpeg.vtrial.decoder mMode: 0 appData: 0xb5877b00
+E/OMXNodeInstance( 1453): getParameter(10:ffmpeg.vtrial.decoder, ParamVideoProfileLevelQuerySupported(0x600000f)) ERROR: UnsupportedIndex(0x8000101a)
+W/OMXNodeInstance( 1453): [10:ffmpeg.vtrial.decoder] component does not support metadata mode; using fallback
+E/OMXNodeInstance( 1453): getExtensionIndex(10:ffmpeg.vtrial.decoder, OMX.google.android.index.prepareForAdaptivePlayback) ERROR: UnsupportedIndex(0x8000101a)
+I/Telecom ( 1677): TelecomGlobals: TelecomGlobals initializing
+I/ActivityManager( 1677): Config changes=1dfb {1.0 460mcc7mnc zh_CN ?layoutDir sw450dp w800dp h425dp 320dpi nrml long land finger -keyb/v/h -nav/h s.3}
+W/OMXNodeInstance( 1453): [1b:google.mpeg4.decoder] component does not support metadata mode; using fallback
+W/OMXNodeInstance( 1453): [1c:google.h263.decoder] component does not support metadata mode; using fallback
+D/BluetoothAdapter( 1841): 1034248408: getState() :  mService = null. Returning STATE_OFF
+D/BluetoothAdapter( 1841): 1034248408: getState() :  mService = null. Returning STATE_OFF
+D/BluetoothAdapter( 1841): 1034248408: getState() :  mService = null. Returning STATE_OFF
+D/BluetoothAdapter( 1841): 1034248408: getState() :  mService = null. Returning STATE_OFF
+I/ActivityManager( 1677): Start proc 1998:android.process.acore/u0a2 for content provider com.android.providers.contacts/.CallLogProvider
+D/OpenGLRenderer( 1841): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+W/OMXNodeInstance( 1453): [1d:google.vp8.decoder] component does not support metadata mode; using fallback
+W/OMXNodeInstance( 1453): [1e:google.vp9.decoder] component does not support metadata mode; using fallback
+D/SoftHEVC( 1453): Number of CPU cores: 2
+D/SoftHEVC( 1453): Initializing decoder
+D/SoftHEVC( 1453): Set number of cores to 2
+D/SoftHEVC( 1453): Ittiam decoder version number: @(#)Id:HEVCDEC_production Ver:04.01 Released by ITTIAM Build: Jul 24 2019 @ 01:34:42
+W/OMXNodeInstance( 1453): [1f:google.hevc.decoder] component does not support metadata mode; using fallback
+D/SoftHEVC( 1453): Freeing codec memory
+D/SoftHEVC( 1453): Number of CPU cores: 2
+D/SoftHEVC( 1453): Initializing decoder
+D/SoftHEVC( 1453): Set number of cores to 2
+D/SoftHEVC( 1453): Ittiam decoder version number: @(#)Id:HEVCDEC_production Ver:04.01 Released by ITTIAM Build: Jul 24 2019 @ 01:34:42
+D/SoftHEVC( 1453): In SoftHEVC::~SoftHEVC
+D/SoftHEVC( 1453): Freeing codec memory
+I/SoftMPEG4Encoder( 1453): Construct SoftMPEG4Encoder
+W/ACodec  ( 1453): do not know color format 0x7f000789 = 2130708361
+D/BluetoothManagerService( 1677): Message: 30
+D/BluetoothManagerService( 1677): Trying to bind to profile: 1, while Bluetooth was disabled
+I/SoftAVCEncoder( 1453): Construct SoftAVCEncoder
+W/ACodec  ( 1453): do not know color format 0x7f000789 = 2130708361
+I/SoftMPEG4Encoder( 1453): Construct SoftMPEG4Encoder
+W/ACodec  ( 1453): do not know color format 0x7f000789 = 2130708361
+W/ACodec  ( 1453): do not know color format 0x7f000789 = 2130708361
+W/ActivityThread( 1943): ClassLoader.loadClass: The class loader returned by Thread.getContextClassLoader() may fail for processes that host multiple applications. You should explicitly specify a context class loader. For example: Thread.setContextClassLoader(getClass().getClassLoader());
+D/NuPlayerDriver( 1453): reset(0xb584fbe0)
+D/NuPlayerDriver( 1453): notifyResetComplete(0xb584fbe0)
+D/NuPlayerDriver( 1453): reset(0xb584fdc0)
+D/GpsLocationProvider( 1677): received SIM realted action: 
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+D/WifiController( 1677): DEFERRED_TOGGLE handled
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:17 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+D/NuPlayerDriver( 1453): notifyResetComplete(0xb584fdc0)
+D/WifiService( 1677): New client listening to asynchronous messages
+D/WifiService( 1677): setWifiEnabled: true pid=1943, uid=1000
+E/WifiService( 1677): Invoking mWifiStateMachine.setWifiEnabled
+I/FFmpegExtractor( 1453): android-source:0xb5850a80
+I/FFmpegExtractor( 1453): android-source:0xb5036340
+D/FFMPEG  ( 1453): android source begin open
+D/FFMPEG  ( 1453): android open, url: android-source:0xb5036340
+D/FFMPEG  ( 1453): ffmpeg open android data source success, source ptr: 0xb5036340
+D/FFMPEG  ( 1453): android source open success
+I/FFMPEG  ( 1453): Input #0, ogg, from 'android-source:0xb5036340':
+I/FFMPEG  ( 1453):   Duration: 00:00:00.19, start: 0.000000, bitrate: 332 kb/s
+I/FFMPEG  ( 1453):     Stream #0:0: Audio: vorbis, 44100 Hz, stereo, fltp, 160 kb/s
+I/FFmpegExtractor( 1453): FFmpegExtrator, url: android-source:0xb5036340, format_name: ogg, format_long_name: Ogg
+I/FFmpegExtractor( 1453): list the formats suppoted by ffmpeg: 
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): adjust mime(application/ogg -> audio/vorbis)
+D/FFmpegExtractor( 1453): suppoted codec(vorbis) by official Stagefright
+D/FFMPEG  ( 1453): android source close
+I/FFmpegExtractor( 1453): sniff through BetterSniffFFMPEG success
+D/FFmpegExtractor( 1453): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+D/NuPlayerDriver( 1453): start(0xb5028040)
+I/GenericSource( 1453): start
+D/FFMPEG  ( 1453): android source begin open
+D/FFMPEG  ( 1453): android open, url: android-source:0xb5850a80
+D/FFMPEG  ( 1453): ffmpeg open android data source success, source ptr: 0xb5850a80
+D/FFMPEG  ( 1453): android source open success
+E/WifiStateMachine( 1677): Failed to reload STA firmware java.lang.IllegalArgumentException: command '7 softap fwreload eth1 STA' failed with '501 7 SoftAP command has failed'
+D/CommandListener( 1448): Setting iface cfg
+D/CommandListener( 1448): Trying to bring down eth1
+D/CommandListener( 1448): Clearing all IP addresses on eth1
+E/WifiMonitor( 1677): killSupplicant p2pfalse init.svc.wpa_supplicant=unknown init.svc.p2p_supplicant=unknown
+I/Telephony( 1908): PstnIncomingCallNotifier: Unregistering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+I/Telecom ( 1677): TelecomGlobals: CallsManager initialized
+W/Launcher( 1943): setApplicationContext called twice! old=com.vphone.launcher.LauncherApplication@3ba8aeec new=com.vphone.launcher.LauncherApplication@3ba8aeec
+W/ContextImpl( 1677): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1706 android.content.ContextWrapper.startService:516 com.android.server.telecom.BluetoothPhoneService.start:440 com.android.server.telecom.TelecomGlobals.initialize:93 com.android.server.telecom.TelecomService.onCreate:164 
+D/WifiMonitor( 1677): startMonitoring(eth1) with mConnected = false
+E/WifiHW  ( 1677): Unable to open connection to supplicant on "@android:wpa_eth1": No such file or directory
+I/FFMPEG  ( 1453): Input #0, ogg, from 'android-source:0xb5850a80':
+I/FFMPEG  ( 1453):   Duration: 00:00:00.11, start: 0.000000, bitrate: 487 kb/s
+I/FFMPEG  ( 1453):     Stream #0:0: Audio: vorbis, 44100 Hz, stereo, fltp, 160 kb/s
+I/FFmpegExtractor( 1453): FFmpegExtrator, url: android-source:0xb5850a80, format_name: ogg, format_long_name: Ogg
+I/FFmpegExtractor( 1453): list the formats suppoted by ffmpeg: 
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): adjust mime(application/ogg -> audio/vorbis)
+D/FFmpegExtractor( 1453): suppoted codec(vorbis) by official Stagefright
+D/FFMPEG  ( 1453): android source close
+I/FFmpegExtractor( 1453): sniff through BetterSniffFFMPEG success
+D/FFmpegExtractor( 1453): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+D/NuPlayerDriver( 1453): start(0xb50284c0)
+I/GenericSource( 1453): start
+I/Telephony( 1908): PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+D/NuPlayerDriver( 1453): reset(0xb5028040)
+D/NuPlayerDriver( 1453): notifyResetComplete(0xb5028040)
+I/FFmpegExtractor( 1453): android-source:0xb5036440
+W/ResourcesManager( 1677): Asset path '/system/framework/com.android.location.provider.jar' does not exist or contains no resources.
+D/NuPlayerDriver( 1453): reset(0xb50284c0)
+D/FFMPEG  ( 1453): android source begin open
+D/FFMPEG  ( 1453): android open, url: android-source:0xb5036440
+D/FFMPEG  ( 1453): ffmpeg open android data source success, source ptr: 0xb5036440
+D/FFMPEG  ( 1453): android source open success
+I/FFMPEG  ( 1453): Input #0, ogg, from 'android-source:0xb5036440':
+I/FFMPEG  ( 1453):   Duration: 00:00:00.08, start: 0.000000, bitrate: 612 kb/s
+I/FFMPEG  ( 1453):     Stream #0:0: Audio: vorbis, 44100 Hz, stereo, fltp, 160 kb/s
+I/FFmpegExtractor( 1453): FFmpegExtrator, url: android-source:0xb5036440, format_name: ogg, format_long_name: Ogg
+I/FFmpegExtractor( 1453): list the formats suppoted by ffmpeg: 
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): adjust mime(application/ogg -> audio/vorbis)
+D/FFmpegExtractor( 1453): suppoted codec(vorbis) by official Stagefright
+D/FFMPEG  ( 1453): android source close
+I/FFmpegExtractor( 1453): sniff through BetterSniffFFMPEG success
+D/FFmpegExtractor( 1453): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+D/NuPlayerDriver( 1453): notifyResetComplete(0xb50284c0)
+I/wpa_supplicant( 2047): Successfully initialized wpa_supplicant
+D/GpsNetInitiatedHandler( 1677): location enabled :true
+V/WiredAccessoryManager( 1677): init()
+I/FFmpegExtractor( 1453): android-source:0xb5850ac0
+D/FFMPEG  ( 1453): android source begin open
+D/FFMPEG  ( 1453): android open, url: android-source:0xb5850ac0
+D/FFMPEG  ( 1453): ffmpeg open android data source success, source ptr: 0xb5850ac0
+D/FFMPEG  ( 1453): android source open success
+I/FFMPEG  ( 1453): Input #0, ogg, from 'android-source:0xb5850ac0':
+I/FFMPEG  ( 1453):   Duration: 00:00:00.29, start: 0.000000, bitrate: 271 kb/s
+I/FFMPEG  ( 1453):     Stream #0:0: Audio: vorbis, 44100 Hz, stereo, fltp, 160 kb/s
+I/FFmpegExtractor( 1453): FFmpegExtrator, url: android-source:0xb5850ac0, format_name: ogg, format_long_name: Ogg
+I/FFmpegExtractor( 1453): list the formats suppoted by ffmpeg: 
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): adjust mime(application/ogg -> audio/vorbis)
+D/FFmpegExtractor( 1453): suppoted codec(vorbis) by official Stagefright
+D/FFMPEG  ( 1453): android source close
+I/FFmpegExtractor( 1453): sniff through BetterSniffFFMPEG success
+D/FFmpegExtractor( 1453): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+D/NuPlayerDriver( 1453): start(0xb584fbe0)
+I/GenericSource( 1453): start
+D/NuPlayerDriver( 1453): start(0xb584fdc0)
+I/GenericSource( 1453): start
+D/        ( 1841): HostConnection::get() New Host Connection established 0xb3ed0980, tid 1841
+D/WifiConfigStore( 1677): Loading config and enabling all networks 
+D/Atlas   ( 1841): Validating map...
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1841): Pointer 0x0, not in getPreloadedDrawables?
+E/WifiConfigStore( 1677): Error parsing configuration: java.io.FileNotFoundException: /data/misc/wifi/ipconfig.txt: open failed: ENOENT (No such file or directory)
+D/BluetoothManagerService( 1677): Message: 300
+D/BluetoothManagerService( 1677): MESSAGE_USER_SWITCHED
+D/WifiNative-HAL( 1677): Setting external_sim to 1
+D/WifiStateMachine( 1677): Setting OUI to DA-A1-19
+I/WifiNative-HAL( 1677): startHal
+E/wifi    ( 1677): getStaticLongField sWifiHalHandle 0xa0afb82c
+D/wifi    ( 1677): halHandle = 0x0, mVM = 0xb3c4e280, mCls = 0x201046
+I/WifiNative-HAL( 1677): Could not start hal
+D/PermissionCache( 1443): checking android.permission.HARDWARE_TEST for uid=1000 => granted (258 us)
+D/NuPlayerDriver( 1453): reset(0xb584fdc0)
+D/NuPlayerDriver( 1453): reset(0xb584fbe0)
+D/NuPlayerDriver( 1453): notifyResetComplete(0xb584fdc0)
+D/NuPlayerDriver( 1453): notifyResetComplete(0xb584fbe0)
+I/WifiNative-HAL( 1677): startHal
+E/WifiStateMachine( 1677): cancelDelayedScan -> 1
+D/WifiScanningService( 1677): SCAN_AVAILABLE : 3
+D/RttService( 1677): SCAN_AVAILABLE : 3
+D/RttService( 1677): DefaultState got{ when=-6ms what=160512 target=com.android.internal.util.StateMachine$SmHandler }
+E/WifiStateMachine( 1677): Failed to set frequency band 0
+I/FFmpegExtractor( 1453): android-source:0xb5036140
+D/FFMPEG  ( 1453): android source begin open
+D/FFMPEG  ( 1453): android open, url: android-source:0xb5036140
+D/FFMPEG  ( 1453): ffmpeg open android data source success, source ptr: 0xb5036140
+D/FFMPEG  ( 1453): android source open success
+D/TelephonyProvider( 1908): dbh.onOpen: ok, queried table=siminfo
+D/TelephonyProvider( 1908): dbh.onOpen: ok, queried table=carriers
+D/WifiScanningService( 1677): DefaultState got{ when=-20ms what=160006 target=com.android.internal.util.StateMachine$SmHandler }
+I/WifiNative-HAL( 1677): startHal
+D/PhoneStatusBar( 1841): disable: < expand icons alerts system_info back home recent clock search >
+I/FFMPEG  ( 1453): Input #0, ogg, from 'android-source:0xb5036140':
+I/FFMPEG  ( 1453):   Duration: 00:00:00.11, start: 0.000000, bitrate: 477 kb/s
+I/FFMPEG  ( 1453):     Stream #0:0: Audio: vorbis, 44100 Hz, stereo, fltp, 160 kb/s
+I/FFmpegExtractor( 1453): FFmpegExtrator, url: android-source:0xb5036140, format_name: ogg, format_long_name: Ogg
+I/FFmpegExtractor( 1453): list the formats suppoted by ffmpeg: 
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): adjust mime(application/ogg -> audio/vorbis)
+D/FFmpegExtractor( 1453): suppoted codec(vorbis) by official Stagefright
+D/FFMPEG  ( 1453): android source close
+I/FFmpegExtractor( 1453): sniff through BetterSniffFFMPEG success
+D/FFmpegExtractor( 1453): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+E/WifiScanningService( 1677): could not start HAL
+V/BackupManagerService( 1677): Connected to transport ComponentInfo{android/com.android.internal.backup.LocalTransportService}
+V/BackupManagerService( 1677): Registering transport android/com.android.internal.backup.LocalTransportService::android/com.android.internal.backup.LocalTransport = android.app.backup.BackupTransport$TransportImpl@e49a919
+D/        ( 1443): HostConnection::get() New Host Connection established 0xb602d340, tid 1840
+D/VolumeUI( 1841): Registering volume controller
+D/NuPlayerDriver( 1453): start(0xb50284c0)
+I/GenericSource( 1453): start
+D/ConnectivityService( 1677): registerNetworkAgent NetworkAgentInfo{ ni{[type: WIFI[], state: CONNECTING/CONNECTING, reason: (unspecified), extra: "WiredSSID", roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]}  network{null}  lp{{LinkAddresses: []  Routes: [] DnsAddresses: [] Domains: null MTU: 0 TcpBufferSizes: 524288,1048576,2097152,262144,524288,1048576}}  nc{[ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps]}  Score{20}  everValidated{false}  lastValidated{false}  created{false}  explicitlySelected{false} }
+E/WifiConfigStore( 1677): saveWifiConfigBSSID Setting BSSID for "WiredSSID"NONE to any
+D/        ( 1677): HostConnection::get() New Host Connection established 0xb3f70750, tid 1677
+D/ConnectivityService( 1677): NetworkAgentInfo [WIFI () - 100] EVENT_NETWORK_INFO_CHANGED, going from null to CONNECTING
+D/BluetoothAdapter( 1841): 1034248408: getState() :  mService = null. Returning STATE_OFF
+D/BluetoothAdapter( 1841): 1034248408: getState() :  mService = null. Returning STATE_OFF
+E/WifiConfigStore( 1677): saveWifiConfigBSSID Setting BSSID for "WiredSSID"NONE to any
+D/CommandListener( 1448): Setting iface cfg
+D/PhoneStatusBar( 1841): heads up is enabled
+D/NuPlayerDriver( 1453): reset(0xb50284c0)
+D/NuPlayerDriver( 1453): notifyResetComplete(0xb50284c0)
+I/Choreographer( 1841): Skipped 53 frames!  The application may be doing too much work on its main thread.
+D/ViewRootImpl( 1841): changeCanvasOpacity: opaque=true
+E/WifiStateMachine( 1677): Start Dhcp Watchdog 1
+I/WifiNative-HAL( 1677): startHal
+E/native  ( 1677): do suspend false
+I/FFmpegExtractor( 1453): android-source:0xb5036100
+D/FFMPEG  ( 1453): android source begin open
+D/FFMPEG  ( 1453): android open, url: android-source:0xb5036100
+D/FFMPEG  ( 1453): ffmpeg open android data source success, source ptr: 0xb5036100
+D/FFMPEG  ( 1453): android source open success
+I/FFMPEG  ( 1453): Input #0, ogg, from 'android-source:0xb5036100':
+I/FFMPEG  ( 1453):   Duration: 00:00:00.07, start: 0.000000, bitrate: 683 kb/s
+I/FFMPEG  ( 1453):     Stream #0:0: Audio: vorbis, 44100 Hz, stereo, fltp, 160 kb/s
+I/FFmpegExtractor( 1453): FFmpegExtrator, url: android-source:0xb5036100, format_name: ogg, format_long_name: Ogg
+I/FFmpegExtractor( 1453): list the formats suppoted by ffmpeg: 
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): adjust mime(application/ogg -> audio/vorbis)
+D/FFmpegExtractor( 1453): suppoted codec(vorbis) by official Stagefright
+D/FFMPEG  ( 1453): android source close
+I/FFmpegExtractor( 1453): sniff through BetterSniffFFMPEG success
+D/FFmpegExtractor( 1453): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+E/native  ( 1677): do suspend false
+E/WifiStateMachine( 1677): Unexpected BatchedScanResults :null
+I/WifiNative-HAL( 1677): startHal
+D/NuPlayerDriver( 1453): start(0xb584fbe0)
+I/GenericSource( 1453): start
+I/wpa_supplicant( 2047): eth1: Trying to associate with SSID 'WiredSSID'
+I/wpa_supplicant( 2047): eth1: Associated with 01:80:c2:00:00:03
+I/wpa_supplicant( 2047): eth1: CTRL-EVENT-CONNECTED - Connection to 01:80:c2:00:00:03 completed [id=0 id_str=]
+D/NuPlayerDriver( 1453): reset(0xb584fbe0)
+D/NuPlayerDriver( 1453): notifyResetComplete(0xb584fbe0)
+I/FFmpegExtractor( 1453): android-source:0xb5036100
+D/FFMPEG  ( 1453): android source begin open
+D/FFMPEG  ( 1453): android open, url: android-source:0xb5036100
+D/FFMPEG  ( 1453): ffmpeg open android data source success, source ptr: 0xb5036100
+D/FFMPEG  ( 1453): android source open success
+I/FFMPEG  ( 1453): Input #0, ogg, from 'android-source:0xb5036100':
+I/FFMPEG  ( 1453):   Duration: 00:00:00.18, start: 0.000000, bitrate: 431 kb/s
+I/FFMPEG  ( 1453):     Stream #0:0: Audio: vorbis, 44100 Hz, mono, fltp, 239 kb/s
+I/FFMPEG  ( 1453):     Metadata:
+I/FFMPEG  ( 1453):       ARTIST          : Copyright 2013 Android Open Source Project
+I/FFmpegExtractor( 1453): FFmpegExtrator, url: android-source:0xb5036100, format_name: ogg, format_long_name: Ogg
+I/FFmpegExtractor( 1453): list the formats suppoted by ffmpeg: 
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): ========================================
+I/FFmpegExtractor( 1453): adjust mime(application/ogg -> audio/vorbis)
+D/FFmpegExtractor( 1453): suppoted codec(vorbis) by official Stagefright
+D/FFMPEG  ( 1453): android source close
+I/FFmpegExtractor( 1453): sniff through BetterSniffFFMPEG success
+D/FFmpegExtractor( 1453): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+D/NuPlayerDriver( 1453): start(0xb584fdc0)
+I/GenericSource( 1453): start
+D/libEGL  ( 1841): loaded /system/lib/egl/libEGL_adreno.so
+V/ActivityManager( 1677): Display changed displayId=0
+D/BluetoothManagerService( 1677): Trying to bind to profile: 1, while Bluetooth was disabled
+D/BluetoothManagerService( 1677): Message: 30
+D/NuPlayerDriver( 1453): reset(0xb584fdc0)
+D/NuPlayerDriver( 1453): notifyResetComplete(0xb584fdc0)
+D/AndroidRuntime( 2140): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+D/AndroidRuntime( 2168): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+D/        ( 1841): HostConnection::get() New Host Connection established 0xb3ed0d30, tid 2145
+D/libEGL  ( 1841): loaded /system/lib/egl/libGLESv1_CM_adreno.so
+D/libEGL  ( 1841): loaded /system/lib/egl/libGLESv2_adreno.so
+I/OpenGLRenderer( 1841): Initialized EGL, version 1.4
+E/DcSwitchStateMachine-0( 1908): DctController is not ready
+E/ConnectivityService( 1677): Failed to find Messenger in unregisterNetworkFactory
+W/ResourceType( 1943): Attempt to retrieve bag 0x7f0e00a4 which is invalid or in a cycle.
+D/ConnectivityService( 1677): Got NetworkFactory Messenger for Telephony
+I/StatusBarManagerService( 1677): registerStatusBar bar=com.android.internal.statusbar.IStatusBar$Stub$Proxy@223dcc16
+D/OpenGLRenderer( 1841): Enabling debug mode 0
+D/BluetoothManagerService( 1677): Message: 20
+D/BluetoothManagerService( 1677): Added callback: android.bluetooth.IBluetoothManagerCallback$Stub$Proxy@161cb25:true
+D/BluetoothManagerService( 1677): Message: 30
+D/BluetoothManagerService( 1677): Trying to bind to profile: 1, while Bluetooth was disabled
+W/Searchables( 1677): No global search activity found
+I/dhcpcd  ( 2183): version 5.5.6 starting
+I/Telephony( 1908): TtyManager: updateUiTtyMode -1 -> 0
+D/GpsLocationProvider( 1677): received SIM realted action: 
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:18 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+D/AlarmManagerService( 1677): Setting time of day to sec=1582687097
+I/dhcpcd  ( 2183): eth1: rebinding lease of 172.17.100.15
+D/Launcher.Model( 1943): 11683562 - loadWorkspace()
+D/Launcher.Model( 1943): 11683562 -   loadedOldDb: false
+W/Launcher( 1943): setApplicationContext called twice! old=com.vphone.launcher.LauncherApplication@3ba8aeec new=com.vphone.launcher.LauncherApplication@3ba8aeec
+W/ContextImpl( 1943): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1706 android.content.ContextWrapper.startService:516 com.vphone.launcher.Launcher.startDownloadService:682 com.vphone.launcher.Launcher.access$100:181 com.vphone.launcher.Launcher$2.run:638 
+I/dhcpcd  ( 2183): eth1: acknowledged 172.17.100.15 from 172.17.100.2
+D/OpenGLRenderer( 1943): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+I/dhcpcd  ( 2183): eth1: leased 172.17.100.15 for 86400 seconds
+D/        ( 1943): HostConnection::get() New Host Connection established 0xb3f29b50, tid 1943
+D/Atlas   ( 1943): Validating map...
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 1943): Pointer 0x0, not in getPreloadedDrawables?
+V/WindowManager( 1677): Based on layer: Adding window Window{2862b9c4 u0 com.vphone.launcher/com.vphone.launcher.Launcher} at 1 of 5
+D/Launcher.Model( 1943): Invalid package: ComponentInfo{com.vphone.launcher.ad.icon/com.vphone.launcher.icon} (check again later)
+D/libEGL  ( 1943): loaded /system/lib/egl/libEGL_adreno.so
+D/Launcher.Model( 1943): 11683562 - loadWorkspaceScreensDb()
+D/Launcher.Model( 1943): 11683562 -   screens: { 0: 1 }
+D/Launcher.Model( 1943): 11683562 -   sBgWorkspaceScreens: 1
+D/        ( 1943): HostConnection::get() New Host Connection established 0xae8294a0, tid 2190
+D/libEGL  ( 1943): loaded /system/lib/egl/libGLESv1_CM_adreno.so
+D/libEGL  ( 1943): loaded /system/lib/egl/libGLESv2_adreno.so
+I/OpenGLRenderer( 1943): Initialized EGL, version 1.4
+D/AndroidRuntime( 2140): CheckJNI is OFF
+W/        ( 2140): Failed to bind-mount /system/lib/x86/cpuinfo as /proc/cpuinfo: No such file or directory
+E/        ( 2140): Cannot create code cache directory ./code_cache: Read-only file system.
+D/AndroidRuntime( 2168): CheckJNI is OFF
+D/OpenGLRenderer( 1943): Enabling debug mode 0
+W/        ( 2168): Failed to bind-mount /system/lib/x86/cpuinfo as /proc/cpuinfo: No such file or directory
+E/        ( 2168): Cannot create code cache directory ./code_cache: Read-only file system.
+E/memtrack( 2140): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2140): failed to load memtrack module: -2
+E/memtrack( 2168): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2168): failed to load memtrack module: -2
+V/KeyguardUpdateMonitor( 1841): action android.intent.action.SIM_STATE_CHANGED state: NOT_READY slotId: 0 subid: -2
+D/WifiService( 1677): New client listening to asynchronous messages
+V/KeyguardUpdateMonitor( 1841): action android.intent.action.SIM_STATE_CHANGED state: READY slotId: 0 subid: -2
+V/KeyguardUpdateMonitor( 1841): action android.intent.action.SIM_STATE_CHANGED state: IMSI slotId: 0 subid: -2
+I/Choreographer( 1841): Skipped 46 frames!  The application may be doing too much work on its main thread.
+D/OpenGLRenderer( 1841): setting property extraRasterBucket to 0.95
+D/OpenGLRenderer( 1841):     failed
+D/OpenGLRenderer( 1841): setting property extraRasterBucket to 0.0
+D/OpenGLRenderer( 1841):     failed
+D/AndroidRuntime( 2168): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2140): Calling main entry com.android.commands.settings.SettingsCmd
+D/SIP     ( 1908): [SipSharedPreferences] isReceivingCallsEnabled, option not set; use default value, exception: android.provider.Settings$SettingNotFoundException: sip_receive_calls
+I/ActivityManager( 1677): Start proc 2233:com.android.settings/1000 for broadcast com.android.settings/.cyanogenmod.superuser.SuReceiver
+D/AndroidRuntime( 2140): Shutting down VM
+E/WifiStateMachine( 1677): WifiStateMachine: handleSuccessfulIpConfiguration and no scan results"WiredSSID"NONE
+E/WifiStateMachine( 1677): Did not find remoteAddress {172.17.100.2} in /proc/net/arp
+D/ConnectivityService( 1677): NetworkAgentInfo [WIFI () - 100] EVENT_NETWORK_INFO_CHANGED, going from CONNECTING to CONNECTED
+D/ConnectivityService( 1677): Adding iface eth1 to network 100
+V/RenderScript( 1943): 0xae8c3400 Launching thread(s), CPUs 2
+D/KeyguardUpdateMonitor( 1841): handleSimStateChange(subId=-2, slotId=0, state=UNKNOWN)
+W/KeyguardUpdateMonitor( 1841): invalid subId in handleSimStateChange()
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged()
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged: list is null
+E/ConnectivityService( 1677): Unexpected mtu value: 0, eth1
+D/ConnectivityService( 1677): Adding Route [fe80::/64 -> :: eth1] to network 100
+D/ConnectivityService( 1677): Adding Route [172.17.100.0/24 -> 0.0.0.0 eth1] to network 100
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged()
+D/ConnectivityService( 1677): Adding Route [0.0.0.0/0 -> 172.17.100.2 eth1] to network 100
+D/ConnectivityService( 1677): Setting Dns servers for network 100 to [/192.168.1.1]
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged: list is null
+D/ConnectivityService( 1677): notifyType IP_CHANGED for NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityService( 1677): notifyType PRECHECK for NetworkAgentInfo [WIFI () - 100]
+D/NetworkMonitor/NetworkAgentInfo [WIFI () - 100]( 1677): DefaultState{ when=0 what=532481 target=com.android.internal.util.StateMachine$SmHandler }
+D/NetworkMonitor/NetworkAgentInfo [WIFI () - 100]( 1677): Connected
+D/NetworkMonitor/NetworkAgentInfo [WIFI () - 100]( 1677): EvaluatingState{ when=0 what=532486 arg1=1 target=com.android.internal.util.StateMachine$SmHandler }
+D/NetworkMonitor/NetworkAgentInfo [WIFI () - 100]( 1677): Validated
+D/ConnectivityService( 1677): rematching NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityService( 1677):    accepting network in place of null
+D/ConnectivityService( 1677): Switching to new default network: NetworkAgentInfo{ ni{[type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiredSSID", roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]}  network{100}  lp{{InterfaceName: eth1 LinkAddresses: [fe80::a00:27ff:fe5b:d6c9/64,172.17.100.15/24,]  Routes: [fe80::/64 -> :: eth1,172.17.100.0/24 -> 0.0.0.0 eth1,0.0.0.0/0 -> 172.17.100.2 eth1,] DnsAddresses: [192.168.1.1,] Domains:  MTU: 0 TcpBufferSizes: 524288,1048576,2097152,262144,524288,1048576}}  nc{[ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps]}  Score{20}  everValidated{false}  lastValidated{false}  created{true}  explicitlySelected{false} }
+D/KeyguardUpdateMonitor( 1841): handleSimStateChange(subId=-2, slotId=0, state=READY)
+W/KeyguardUpdateMonitor( 1841): invalid subId in handleSimStateChange()
+D/KeyguardUpdateMonitor( 1841): handleSimStateChange(subId=-2, slotId=0, state=READY)
+W/KeyguardUpdateMonitor( 1841): invalid subId in handleSimStateChange()
+D/ConnectivityService( 1677): Setting tx/rx TCP buffers to 524288,1048576,2097152,262144,524288,1048576
+D/ConnectivityService( 1677): notifyType AVAILABLE for NetworkAgentInfo [WIFI () - 100]
+D/CSLegacyTypeTracker( 1677): Sending connected broadcast for type 1 NetworkAgentInfo [WIFI () - 100] isDefaultNetwork=true
+D/ConnectivityManager.CallbackHandler( 1841): CM callback handler got msg 524290
+D/ConnectivityService( 1677): sendStickyBroadcast: action=android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE
+D/ConnectivityService( 1677): sendStickyBroadcast: action=android.net.conn.CONNECTIVITY_CHANGE
+D/ConnectivityService( 1677): setProvNotificationVisibleIntent: E visible=false networkType=0 extraInfo=null
+D/ConnectivityService( 1677): Validated NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityService( 1677): rematching NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityService( 1677): Network NetworkAgentInfo [WIFI () - 100] was already satisfying request 1. No change.
+D/ConnectivityService( 1677): notifyType AVAILABLE for NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityManager.CallbackHandler( 1841): CM callback handler got msg 524290
+D/ConnectivityService( 1677): sendStickyBroadcast: action=android.net.conn.INET_CONDITION_ACTION
+D/Tethering( 1677): MasterInitialState.processMessage what=3
+I/ActivityManager( 1677): Displayed com.vphone.launcher/.Launcher: +2s214ms
+W/linker  ( 1943): libwebviewchromium.so: unused DT entry: type 0x6ffffef5 arg 0x4ae8
+W/linker  ( 1943): libwebviewchromium.so: unused DT entry: type 0x6ffffffe arg 0x4a88
+W/linker  ( 1943): libwebviewchromium.so: unused DT entry: type 0x6fffffff arg 0x3
+I/WebViewFactory( 1943): Loading com.google.android.webview version 74.0.3729.136 (code 372913610)
+D/AndroidRuntime( 2168): Shutting down VM
+I/ActivityManager( 1677): Start proc 2252:android.process.media/u0a4 for broadcast com.android.providers.downloads/.DownloadReceiver
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 706(30KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 7MB/11MB, paused 5.424ms total 11.519ms
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 39% free, 7MB/11MB, paused 64us total 5.281ms
+I/cr_LibraryLoader( 1943): Time to load native libraries: 0 ms (timestamps 8114-8114)
+I/art     ( 1457): Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 39% free, 7MB/11MB, paused 1.626ms total 7.501ms
+I/art     ( 1943): Rejecting re-init on previously-failed class java.lang.Class<ii>
+I/art     ( 1943): Rejecting re-init on previously-failed class java.lang.Class<ii>
+I/art     ( 1943): Rejecting re-init on previously-failed class java.lang.Class<ii>
+I/chromium( 1943): [INFO:library_loader_hooks.cc(50)] Chromium logging enabled: level = 0, default verbosity = 0
+I/cr_LibraryLoader( 1943): Expected native library version number "74.0.3729.136", actual native library version number "74.0.3729.136"
+I/cr_BrowserStartup( 1943): Initializing chromium process, singleProcess=true
+D/Sensors ( 1677): Client connection accepted (192)
+E/SQLiteLog( 2252): (283) recovered 1 frames from WAL file /data/data/com.android.providers.media/databases/external.db-wal
+I/ActivityManager( 1677): Start proc 2292:com.bignox.app.store.hd/1000 for broadcast com.bignox.app.store.hd/.providers.downloads.DownloadReceiver
+D/ConnectivityService( 1677): listenForNetwork for NetworkRequest [ id=3, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+D/ConnectivityService( 1677): handleRegisterNetworkRequest checking NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityService( 1677): apparently satisfied.  currentScore=60
+D/ConnectivityManager.CallbackHandler( 1943): CM callback handler got msg 524290
+W/linker  ( 2292): libxl_thunder_sdk.so: unused DT entry: type 0xf arg 0x57897
+D/ConnectivityService( 1677): listenForNetwork for NetworkRequest [ id=4, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+D/ConnectivityService( 1677): handleRegisterNetworkRequest checking NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityService( 1677): apparently satisfied.  currentScore=60
+D/ConnectivityManager.CallbackHandler( 1943): CM callback handler got msg 524290
+I/Choreographer( 1943): Skipped 40 frames!  The application may be doing too much work on its main thread.
+D/Launcher( 1943): 11683562 - bindAddScreens()
+D/Launcher( 1943): 11683562 -   orderedScreenIds: 1
+D/Launcher.Workspace( 1943): 11683562 - insertNewWorkspaceScreen(): 1 at index: 0
+I/XLUtil  ( 2292): loadAndParseFile start
+I/XLUtil  ( 2292): loadAndParseFile end
+I/XLDownloadManager( 2292): Peerid:RDBDNjM3MEYzRkVEMDBYWQ==
+I/XLDownloadManager( 2292): Guid:MzUyMjg0MDQzNDg3NTgwX0QwQzYzNzBGM0ZFRA==
+D/EventBus( 1943): No subscribers registered for event class com.vphone.launcher.game.event.RankEvent
+D/EventBus( 1943): No subscribers registered for event class org.greenrobot.eventbus.NoSubscriberEvent
+E/installd( 1454): Unable to unlink boot marker at /data/dalvik-cache/arm/.booting, error=No such file or directory
+E/ActivityManager( 1677): Unable to mark boot complete for abi: armeabi-v7a
+I/SystemServiceManager( 1677): Starting phase 1000
+V/KeyguardServiceDelegate( 1677): *** Keyguard started
+W/KeyguardServiceDelegate( 1677): onScreenTurnedOn(): no keyguard service!
+V/KeyguardServiceDelegate( 1677): *** Keyguard connected (yay!)
+I/XLDownloadManager( 2292): doMonitorNetworkChange()
+I/XLDownloadManager( 2292): register Receiver
+V/KeyguardServiceDelegate( 1677): **** SHOWN CALLED ****
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged()
+D/GpsLocationProvider( 1677): received SIM realted action: 
+D/        ( 1677): HostConnection::get() New Host Connection established 0xa202e300, tid 1713
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged: list is null
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:19 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+I/Telephony( 1908): PstnIncomingCallNotifier: Unregistering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+W/ContextImpl( 1677): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1327 com.android.server.InputMethodManagerService.hideCurrentInputLocked:1992 com.android.server.InputMethodManagerService.windowGainedFocus:2082 com.android.internal.view.IInputMethodManager$Stub.onTransact:221 com.android.server.InputMethodManagerService.onTransact:873 
+W/ContextImpl( 1943): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1327 android.content.ContextWrapper.sendBroadcast:377 com.vphone.launcher.Hotseat$8.onResponse:647 com.vphone.launcher.Hotseat$8.onResponse:636 com.vphone.launcher.network.GsonRequest.deliverResponse:52 
+I/Telephony( 1908): PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+D/GpsLocationProvider( 1677): received SIM realted action: 
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:19 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged()
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged: list is null
+I/Telephony( 1908): PstnIncomingCallNotifier: Unregistering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+I/Telephony( 1908): PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+E/TelephonyProvider( 1908): Failed setting numeric '460072' to the current operator
+E/TelephonyProvider( 1908): Failed setting numeric '460072' to the current operator
+D/GpsLocationProvider( 1677): received SIM realted action: 
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged()
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:19 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+D/GpsLocationProvider( 1677): received SIM realted action: 
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:19 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+V/KeyguardUpdateMonitor( 1841): SubInfo:{id=2, iccId=89860081012081983715 simSlotIndex=0 displayName=CARD 1 carrierName=Android nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@5113e38 mcc 460 mnc 72}
+E/libEGL  ( 1943): call to OpenGL ES API with no current context (logged once per thread)
+D/KeyguardViewMediator( 1841): onSimStateChanged(subId=2, slotId=0,state=READY)
+I/Telephony( 1908): PstnIncomingCallNotifier: Unregistering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+I/Telephony( 1908): PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+D/WifiService( 1677): New client listening to asynchronous messages
+W/ActivityThread( 2292): ClassLoader.loadClass: The class loader returned by Thread.getContextClassLoader() may fail for processes that host multiple applications. You should explicitly specify a context class loader. For example: Thread.setContextClassLoader(getClass().getClassLoader());
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+D/GpsLocationProvider( 1677): received SIM realted action: 
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:19 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+I/Telephony( 1908): PstnIncomingCallNotifier: Unregistering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+I/Telephony( 1908): PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+V/KeyguardUpdateMonitor( 1841): action android.intent.action.SIM_STATE_CHANGED state: LOADED slotId: 0 subid: 2
+I/Telephony( 1908): PstnIncomingCallNotifier: Unregistering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+I/Telephony( 1908): PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged()
+I/art     ( 1677): Explicit concurrent mark sweep GC freed 27822(1892KB) AllocSpace objects, 14(224KB) LOS objects, 33% free, 13MB/20MB, paused 219us total 32.614ms
+V/KeyguardUpdateMonitor( 1841): SubInfo:{id=2, iccId=89860081012081983715 simSlotIndex=0 displayName=Android carrierName=Android nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@3fb805e4 mcc 460 mnc 72}
+I/Telephony( 1908): PstnIncomingCallNotifier: Unregistering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+D/Volley  ( 2292): [1] DiskBasedCache.clear: Cache cleared.
+D/KeyguardUpdateMonitor( 1841): handleSimStateChange(subId=2, slotId=0, state=READY)
+V/KeyguardUpdateMonitor( 1841): onSubscriptionInfoChanged()
+I/Telephony( 1908): PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.gsm.GSMPhone) {2cca3049}
+W/ContextImpl( 2292): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1706 android.content.ContextWrapper.startService:516 com.bignox.app.store.hd.StoreApplication.onCreate:97 android.app.Instrumentation.callApplicationOnCreate:1012 android.app.ActivityThread.handleBindApplication:4592 
+I/NotificationMgr( 1908): updateMwi(): subId 2 update to false
+V/KeyguardUpdateMonitor( 1841): SubInfo:{id=2, iccId=89860081012081983715 simSlotIndex=0 displayName=Android carrierName=Android nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@257e2a4d mcc 460 mnc 72}
+I/HttpDnsSDK( 2292): HttpDnsThreadFactory create a new thread, name: Thread-76
+I/HttpDnsSDK( 2292): HttpDnsThreadFactory create a new thread, name: Thread-77
+I/HttpDnsSDK( 2292): HttpDnsThreadFactory create a new thread, name: Thread-78
+W/ContextImpl( 2292): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1706 android.content.ContextWrapper.startService:516 android.content.ContextWrapper.startService:516 com.bignox.app.store.hd.providers.downloads.DownloadReceiver.startService:188 com.bignox.app.store.hd.providers.downloads.DownloadReceiver.onReceive:53 
+W/ContextImpl( 1943): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1706 android.content.ContextWrapper.startService:516 android.content.ContextWrapper.startService:516 com.vphone.launcher.providers.downloads.DownloadReceiver.startService:188 com.vphone.launcher.providers.downloads.DownloadReceiver.onReceive:53 
+V/OtaStartupReceiver( 1908): onOtaspChanged: mOtaspMode=3
+D/XLDownloadManager( 2292): NetworkChangeHandlerThread nettype=9
+D/XLDownloadManager( 2292): NetworkChangeHandlerThread bssid=01:80:c2:00:00:03
+I/RecoverySystem( 1677): No recovery log file
+D/WIFI    ( 1677): Registering NetworkFactory
+D/WIFI_UT ( 1677): Registering NetworkFactory
+D/ConnectivityService( 1677): Got NetworkFactory Messenger for WIFI
+D/ConnectivityService( 1677): Got NetworkFactory Messenger for WIFI_UT
+D/WIFI    ( 1677): got request NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 60
+D/WIFI_UT ( 1677): got request NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 60
+I/BootReceiver( 1677): Copying audit failures to DropBox
+I/BootReceiver( 1677): Checking for fsck errors
+D/Event   ( 2292): No subscribers registered for event class com.bignox.app.store.hd.model.Game
+I/ActivityManager( 1677): Start proc 2413:com.android.providers.calendar/u0a1 for broadcast com.android.providers.calendar/.CalendarReceiver
+D/Event   ( 2292): No subscribers registered for event class de.greenrobot.event.NoSubscriberEvent
+I/com.bignox.app.store.hd.repositories.AppRepository( 2292): delete app by package url :com.bignox.app.store.hd
+I/ActivityManager( 1677): Start proc 2427:com.android.keychain/1000 for service com.android.keychain/.KeyChainService
+D/HttpDnsSDK( 2292): 78 - VMStack.java:-2 - [getThreadStackTrace] - resolve host: res.src.yeshen.com, return: {"host":"res.src.yeshen.com","ips":[],"ttl":300}
+W/ResourcesManager( 2413): Asset path '/system/framework/android.test.runner.jar' does not exist or contains no resources.
+D/HttpDnsSDK( 2292): 77 - VMStack.java:-2 - [getThreadStackTrace] - resolve host: ressrc.yeshen.com, return: {"host":"ressrc.yeshen.com","ips":["60.205.13.186"],"ttl":259,"origin_ttl":600}
+D/HttpDnsSDK( 2292): 75 - VMStack.java:-2 - [getThreadStackTrace] - stat: XlULJKsKE00DAL03PWt3Z4x2
+D/Event   ( 2292): No subscribers registered for event class com.bignox.app.store.hd.providers.downloads.CountEvent
+D/Event   ( 2292): No subscribers registered for event class de.greenrobot.event.NoSubscriberEvent
+I/CalendarProvider2( 2413): Created com.android.providers.calendar.CalendarAlarmManager@2ba05aaf(com.android.providers.calendar.CalendarProvider2@1421ebc)
+I/ActivityManager( 1677): Start proc 2450:com.android.managedprovisioning/u0a6 for broadcast com.android.managedprovisioning/.BootReminder
+D/Event   ( 2292): No subscribers registered for event class com.bignox.app.store.hd.model.Game
+D/Event   ( 2292): No subscribers registered for event class de.greenrobot.event.NoSubscriberEvent
+D/Event   ( 2292): No subscribers registered for event class com.bignox.app.store.hd.providers.downloads.CountEvent
+D/Event   ( 2292): No subscribers registered for event class de.greenrobot.event.NoSubscriberEvent
+W/ContextImpl( 2292): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1327 android.content.ContextWrapper.sendBroadcast:377 com.bignox.app.store.hd.asynctask.InitPackageMapTask.onPostExecute:284 com.bignox.app.store.hd.asynctask.InitPackageMapTask.onPostExecute:32 android.os.AsyncTask.finish:636 
+D/Event   ( 2292): No subscribers registered for event class com.bignox.app.store.hd.providers.downloads.CountEvent
+D/Event   ( 2292): No subscribers registered for event class de.greenrobot.event.NoSubscriberEvent
+D/HttpDnsSDK( 2292): 75 - VMStack.java:-2 - [getThreadStackTrace] - get MAN response: {"t":1582687079944,"ret":"","success":"success"}
+W/ContextImpl( 1677): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1327 com.android.server.notification.NotificationManagerService$8.run:1945 android.os.Handler.handleCallback:739 android.os.Handler.dispatchMessage:95 android.os.Looper.loop:135 
+I/ActivityManager( 1677): Start proc 2470:com.android.onetimeinitializer/u0a7 for broadcast com.android.onetimeinitializer/.OneTimeInitializerReceiver
+V/OneTimeInitializerRece( 2470): OneTimeInitializerReceiver.onReceive
+W/ContextImpl( 2292): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1706 android.content.ContextWrapper.startService:516 android.content.ContextWrapper.startService:516 com.bignox.app.store.hd.providers.downloads.DownloadReceiver.startService:188 com.bignox.app.store.hd.providers.downloads.DownloadReceiver.onReceive:48 
+W/ContextImpl( 1943): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1706 android.content.ContextWrapper.startService:516 android.content.ContextWrapper.startService:516 com.vphone.launcher.providers.downloads.DownloadReceiver.startService:188 com.vphone.launcher.providers.downloads.DownloadReceiver.onReceive:48 
+D/Event   ( 2292): No subscribers registered for event class com.bignox.app.store.hd.providers.downloads.CountEvent
+D/Event   ( 2292): No subscribers registered for event class de.greenrobot.event.NoSubscriberEvent
+E/SQLiteLog( 2252): (283) recovered 88 frames from WAL file /data/data/com.android.providers.media/databases/internal.db-wal
+W/MediaScanner( 2252): Error opening directory '/oem/media/', skipping: No such file or directory.
+E/sdcard  ( 1399): opendir /data/media/0/Apps failed: Permission denied
+W/MediaScanner( 2252): Error opening directory '/storage/emulated/0/Apps/', skipping: Permission denied.
+E/sdcard  ( 1399): opendir /data/media/0/Others failed: Permission denied
+W/MediaScanner( 2252): Error opening directory '/storage/emulated/0/Others/', skipping: Permission denied.
+V/MediaScanner( 2252): pruneDeadThumbnailFiles... android.database.sqlite.SQLiteCursor@3ba8aeec
+V/MediaScanner( 2252): /pruneDeadThumbnailFiles... android.database.sqlite.SQLiteCursor@3ba8aeec
+D/ConnectivityService( 1677): releasing NetworkRequest NetworkRequest [ id=3, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+D/ConnectivityManager.CallbackHandler( 1943): CM callback handler got msg 524296
+D/HttpDnsSDK( 2292): 76 - VMStack.java:-2 - [getThreadStackTrace] - resolve host: res.yeshen.com, return: {"host":"res.yeshen.com","ips":["183.201.233.35"],"ttl":60,"origin_ttl":60}
+I/WifiNative-HAL( 1677): startHal
+D/ConnectivityService( 1677): updateNetworkScore for NetworkAgentInfo [WIFI () - 100] to 56
+D/ConnectivityService( 1677): rematching NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityService( 1677): Network NetworkAgentInfo [WIFI () - 100] was already satisfying request 1. No change.
+D/ConnectivityService( 1677): notifyType AVAILABLE for NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityManager.CallbackHandler( 1841): CM callback handler got msg 524290
+D/ConnectivityManager.CallbackHandler( 1943): CM callback handler got msg 524290
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+I/CalendarProvider2( 2413): Sending notification intent: Intent { act=android.intent.action.PROVIDER_CHANGED dat=content://com.android.calendar }
+W/ContentResolver( 2413): Failed to get type for: content://com.android.calendar (Unknown URL content://com.android.calendar)
+D/ConnectivityService( 1677): listenForNetwork for NetworkRequest [ id=5, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+D/ConnectivityService( 1677): handleRegisterNetworkRequest checking NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityService( 1677): apparently satisfied.  currentScore=56
+D/ConnectivityManager.CallbackHandler( 1943): CM callback handler got msg 524290
+D/ConnectivityService( 1677): updateNetworkScore for NetworkAgentInfo [WIFI () - 100] to 60
+D/ConnectivityService( 1677): rematching NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityService( 1677): Network NetworkAgentInfo [WIFI () - 100] was already satisfying request 1. No change.
+D/ConnectivityService( 1677): notifyType AVAILABLE for NetworkAgentInfo [WIFI () - 100]
+D/ConnectivityManager.CallbackHandler( 1841): CM callback handler got msg 524290
+D/ConnectivityManager.CallbackHandler( 1943): CM callback handler got msg 524290
+D/ConnectivityManager.CallbackHandler( 1943): CM callback handler got msg 524290
+E/SQLiteLog( 2413): (284) automatic index on view_events(_id)
+E/RecyclerView( 1943): No adapter attached; skipping layout
+E/RecyclerView( 1943): No adapter attached; skipping layout
+E/RecyclerView( 1943): No adapter attached; skipping layout
+E/RecyclerView( 1943): No adapter attached; skipping layout
+E/RecyclerView( 1943): No adapter attached; skipping layout
+E/RecyclerView( 1943): No adapter attached; skipping layout
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+D/ConnectivityService( 1677): releasing NetworkRequest NetworkRequest [ id=5, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+D/ConnectivityManager.CallbackHandler( 1943): CM callback handler got msg 524296
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+E/RemotePrintSpooler( 1677): Error removing obsolete print jobs .
+E/RemotePrintSpooler( 1677): java.util.concurrent.TimeoutException: Cannot get spooler!
+E/RemotePrintSpooler( 1677): 	at com.android.server.print.RemotePrintSpooler.bindLocked(RemotePrintSpooler.java:378)
+E/RemotePrintSpooler( 1677): 	at com.android.server.print.RemotePrintSpooler.getRemoteInstanceLazy(RemotePrintSpooler.java:354)
+E/RemotePrintSpooler( 1677): 	at com.android.server.print.RemotePrintSpooler.removeObsoletePrintJobs(RemotePrintSpooler.java:289)
+E/RemotePrintSpooler( 1677): 	at com.android.server.print.UserState.removeObsoletePrintJobs(UserState.java:165)
+E/RemotePrintSpooler( 1677): 	at com.android.server.print.PrintManagerService$PrintManagerImpl$3.run(PrintManagerService.java:644)
+E/RemotePrintSpooler( 1677): 	at android.os.Handler.handleCallback(Handler.java:739)
+E/RemotePrintSpooler( 1677): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+E/RemotePrintSpooler( 1677): 	at android.os.Looper.loop(Looper.java:135)
+E/RemotePrintSpooler( 1677): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+I/FusedLocation( 1677): engine started (com.android.location.fused)
+D/GpsLocationProvider( 1677): received SIM realted action: 
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:26 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+D/GpsLocationProvider( 1677): received SIM realted action: 
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:26 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+D/GpsLocationProvider( 1677): received SIM realted action: 
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:26 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+W/DebugConnManager( 1677): getNetworkInfo() on networkType 1
+D/GpsLocationProvider( 1677): received SIM realted action: 
+D/GpsLocationProvider( 1677): SIM MCC/MNC is available: 46007
+D/GpsLocationProvider( 1677): Reset GPS properties, previous size = 8
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_PORT=7275
+D/GpsLocationProvider( 1677): GpsParamsResource: NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): GpsParamsResource: SUPL_MODE=1
+D/GpsLocationProvider( 1677): GPS properties reloaded, size = 8
+E/GpsLocationProvider( 1677): no AGPS interface in set_agps_server
+E/GpsLocationProvider( 1677): no GPS configuration interface in configuraiton_update
+D/GpsLocationProvider( 1677): final config = #Wed Feb 26 11:18:26 GMT+08:00 2020
+D/GpsLocationProvider( 1677): SUPL_VER=0x20000
+D/GpsLocationProvider( 1677): SUPL_HOST=supl.google.com
+D/GpsLocationProvider( 1677): XTRA_SERVER_3=http\://xtra3.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): XTRA_SERVER_1=http\://xtra1.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): SUPL_PORT=7276
+D/GpsLocationProvider( 1677): XTRA_SERVER_2=http\://xtra2.gpsonextra.net/xtra.bin
+D/GpsLocationProvider( 1677): NTP_SERVER=north-america.pool.ntp.org
+D/GpsLocationProvider( 1677): SUPL_MODE=1
+D/PhoneInterfaceManager( 1908): [PhoneIntfMgr] getDataEnabled: subId=2 phoneId=0
+D/PhoneInterfaceManager( 1908): [PhoneIntfMgr] getDataEnabled: subId=2 retVal=true
+D/TelephonyManager( 1677): getDataEnabled: retVal=true
+E/GpsLocationProvider( 1677): No APN found to select.
+D/GpsLocationProvider( 1677): NTP server returned: 1582687086481 (Wed Feb 26 11:18:06 GMT+08:00 2020) reference: 15927 certainty: 18 system time offset: -20245
+E/WifiStateMachine( 1677): WifiStateMachine L2Connected CMD_START_SCAN source -2 2, 3 -> obsolete
+D/AndroidRuntime( 2512): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+D/AndroidRuntime( 2512): CheckJNI is OFF
+W/        ( 2512): Failed to bind-mount /system/lib/x86/cpuinfo as /proc/cpuinfo: No such file or directory
+E/        ( 2512): Cannot create code cache directory ./code_cache: Read-only file system.
+E/memtrack( 2512): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2512): failed to load memtrack module: -2
+D/AndroidRuntime( 2512): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2512): Shutting down VM
+D/AndroidRuntime( 2552): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+D/AndroidRuntime( 2552): CheckJNI is OFF
+W/        ( 2552): Failed to bind-mount /system/lib/x86/cpuinfo as /proc/cpuinfo: No such file or directory
+E/        ( 2552): Cannot create code cache directory ./code_cache: Read-only file system.
+E/memtrack( 2552): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2552): failed to load memtrack module: -2
+D/AndroidRuntime( 2552): Calling main entry com.android.commands.settings.SettingsCmd
+D/AndroidRuntime( 2552): Shutting down VM
+D/AndroidRuntime( 2568): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+D/AndroidRuntime( 2568): CheckJNI is OFF
+W/        ( 2568): Failed to bind-mount /system/lib/x86/cpuinfo as /proc/cpuinfo: No such file or directory
+E/        ( 2568): Cannot create code cache directory ./code_cache: Read-only file system.
+E/memtrack( 2568): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2568): failed to load memtrack module: -2
+D/AndroidRuntime( 2568): Calling main entry com.android.commands.am.Am
+D/AlarmManagerService( 1677): Kernel timezone updated to -480 minutes west of GMT
+D/AndroidRuntime( 2568): Shutting down VM
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+I/ActivityManager( 1677): Waited long enough for: ServiceRecord{2d5fb897 u0 com.bignox.app.store.hd/.services.StoreService}
+D/AndroidRuntime( 2614): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+D/AndroidRuntime( 2614): CheckJNI is OFF
+W/        ( 2614): Failed to bind-mount /system/lib/x86/cpuinfo as /proc/cpuinfo: No such file or directory
+E/        ( 2614): Cannot create code cache directory ./code_cache: Read-only file system.
+E/memtrack( 2614): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2614): failed to load memtrack module: -2
+D/AndroidRuntime( 2614): Calling main entry com.android.commands.settings.SettingsCmd
+D/AndroidRuntime( 2614): Shutting down VM
+E/WifiConfigStore( 1677):  rewrite network history for "WiredSSID"NONE
+I/ActivityManager( 1677): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.cyanogenmod.filemanager/.activities.NavigationActivity bnds=[140,756][404,900] (has extras)} from uid 1000 on display 0
+V/WindowManager( 1677): addAppToken: AppWindowToken{15716a68 token=Token{240c198b ActivityRecord{23535a u0 com.cyanogenmod.filemanager/.activities.NavigationActivity t2}}} to stack=1 task=2 at 0
+W/ContextImpl( 1943): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1341 android.content.ContextWrapper.sendBroadcast:382 com.vphone.launcher.Stats.recordLaunch:129 com.vphone.launcher.Launcher.startAppShortcutOrInfoActivity:3226 com.vphone.launcher.Launcher.onClickAppShortcut:3164 
+V/WindowManager( 1677): Adding window Window{2eec2f03 u0 Starting com.cyanogenmod.filemanager} at 2 of 5 (after Window{2862b9c4 u0 com.vphone.launcher/com.vphone.launcher.Launcher})
+I/ActivityManager( 1677): Start proc 2941:com.cyanogenmod.filemanager/u0a15 for activity com.cyanogenmod.filemanager/.activities.NavigationActivity
+I/art     ( 1677): Explicit concurrent mark sweep GC freed 105947(5MB) AllocSpace objects, 12(192KB) LOS objects, 33% free, 13MB/20MB, paused 393us total 33.789ms
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+E/NFC     ( 2941): could not retrieve NFC service
+D/OpenGLRenderer( 2941): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+D/        ( 2941): HostConnection::get() New Host Connection established 0xb3ece730, tid 2941
+D/Atlas   ( 2941): Validating map...
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+W/Atlas   ( 2941): Pointer 0x0, not in getPreloadedDrawables?
+V/WindowManager( 1677): Adding window Window{2066774f u0 com.cyanogenmod.filemanager/com.cyanogenmod.filemanager.activities.NavigationActivity} at 2 of 6 (before Window{2eec2f03 u0 Starting com.cyanogenmod.filemanager})
+V/MimeTypeIndexService( 2941): onHandleIntent(Intent { act=com.cyanogenmod.filemanager.ACTION_START_INDEX cmp=com.cyanogenmod.filemanager/.service.MimeTypeIndexService (has extras) })
+D/MimeTypeIndexService( 2941): Action: com.cyanogenmod.filemanager.ACTION_START_INDEX
+V/MimeTypeIndexService( 2941): performIndexAction(/storage/emulated/0)
+I/MimeTypeIndexService( 2941): Starting mime type usage indexing on '/storage/emulated/0'
+D/MimeTypeIndexService( 2941): TEXT = 790
+D/MimeTypeIndexService( 2941): NONE = 18314246
+D/MimeTypeIndexService( 2941): IMAGE = 34652
+V/MimeTypeIndexService( 2941): onHandleIntent(Intent { act=com.cyanogenmod.filemanager.ACTION_START_INDEX cmp=com.cyanogenmod.filemanager/.service.MimeTypeIndexService (has extras) })
+D/MimeTypeIndexService( 2941): Action: com.cyanogenmod.filemanager.ACTION_START_INDEX
+V/MimeTypeIndexService( 2941): performIndexAction(/system)
+I/MimeTypeIndexService( 2941): Starting mime type usage indexing on '/system'
+D/MimeTypeIndexService( 2941): AUDIO = 748771
+D/MimeTypeIndexService( 2941): TEXT = 775162
+D/MimeTypeIndexService( 2941): BINARY = 334074338
+D/MimeTypeIndexService( 2941): APP = 64341938
+D/MimeTypeIndexService( 2941): FONT = 19580216
+D/MimeTypeIndexService( 2941): NONE = 66088253
+D/MimeTypeIndexService( 2941): COMPRESS = 13498626
+D/AndroidRuntime( 2980): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+D/AndroidRuntime( 2998): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+D/libEGL  ( 2941): loaded /system/lib/egl/libEGL_adreno.so
+D/        ( 2941): HostConnection::get() New Host Connection established 0xae829400, tid 2970
+D/libEGL  ( 2941): loaded /system/lib/egl/libGLESv1_CM_adreno.so
+D/libEGL  ( 2941): loaded /system/lib/egl/libGLESv2_adreno.so
+I/OpenGLRenderer( 2941): Initialized EGL, version 1.4
+D/OpenGLRenderer( 2941): Enabling debug mode 0
+D/AndroidRuntime( 2980): CheckJNI is OFF
+W/        ( 2980): Failed to bind-mount /system/lib/x86/cpuinfo as /proc/cpuinfo: No such file or directory
+E/        ( 2980): Cannot create code cache directory ./code_cache: Read-only file system.
+E/memtrack( 2980): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2980): failed to load memtrack module: -2
+I/ActivityManager( 1677): Displayed com.cyanogenmod.filemanager/.activities.NavigationActivity: +947ms
+W/ContextImpl( 1677): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1327 com.android.server.InputMethodManagerService.hideCurrentInputLocked:1992 com.android.server.InputMethodManagerService.windowGainedFocus:2082 com.android.internal.view.IInputMethodManager$Stub.onTransact:221 com.android.server.InputMethodManagerService.onTransact:873 
+D/AndroidRuntime( 2980): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2980): Shutting down VM
+D/AndroidRuntime( 2998): CheckJNI is OFF
+W/        ( 2998): Failed to bind-mount /system/lib/x86/cpuinfo as /proc/cpuinfo: No such file or directory
+E/        ( 2998): Cannot create code cache directory ./code_cache: Read-only file system.
+E/memtrack( 2998): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2998): failed to load memtrack module: -2
+D/AndroidRuntime( 2998): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2998): Shutting down VM
+I/ActivityManager( 1677): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.vphone.launcher/.Launcher} from uid 1000 on display 0
+D/PermissionCache( 1443): checking android.permission.READ_FRAME_BUFFER for uid=1000 => granted (34 us)
+E/EGL_emulation( 1443): tid 1443: eglCreateSyncKHR(1479): error 0x3004 (EGL_BAD_ATTRIBUTE)
+W/ContextImpl( 1677): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1327 com.android.server.InputMethodManagerService.hideCurrentInputLocked:1992 com.android.server.InputMethodManagerService.windowGainedFocus:2082 com.android.internal.view.IInputMethodManager$Stub.onTransact:221 com.android.server.InputMethodManagerService.onTransact:873 
+W/OpenGLRenderer( 1943): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+W/ResourceType( 1841): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 1841): Failure retrieving resources for com.cyanogenmod.filemanager: Resource ID #0x0
+D/PhoneStatusBar( 1841): disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search >
+W/WindowManager( 1677): updateFocusedWindowLocked, focusedAppToken is null.
+D/PhoneStatusBar( 1841): disable: < expand icons* alerts system_info* back home recent clock search >
+W/InputMethodManagerService( 1677): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@2a0e6e5e attribute=null, token = android.os.BinderProxy@295dcd7
+I/UsageStatsService( 1677): User[0] Flushing usage stats to disk
+I/ActivityManager( 1677): START u0 {cmp=com.vphone.launcher/.game.AdDetailActivity (has extras)} from uid 1000 on display 0
+V/WindowManager( 1677): addAppToken: AppWindowToken{202b3855 token=Token{15a7e70c ActivityRecord{879d23f u0 com.vphone.launcher/.game.AdDetailActivity t1}}} to stack=0 task=1 at 1
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+V/WindowManager( 1677): Adding window Window{1543535b u0 com.vphone.launcher/com.vphone.launcher.game.AdDetailActivity} at 3 of 6 (after Window{2862b9c4 u0 com.vphone.launcher/com.vphone.launcher.Launcher})
+D/        ( 1443): HostConnection::get() New Host Connection established 0xb68f1180, tid 1856
+W/ViewRootImpl( 1943): Dropping event due to no window focus: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_MENU, scanCode=59, metaState=0, flags=0x8, repeatCount=0, eventTime=1692806, downTime=1692806, deviceId=1, source=0x101 }
+I/ActivityManager( 1677): Displayed com.vphone.launcher/.game.AdDetailActivity: +496ms
+W/ContextImpl( 1677): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1327 com.android.server.InputMethodManagerService.hideCurrentInputLocked:1992 com.android.server.InputMethodManagerService.windowGainedFocus:2082 com.android.internal.view.IInputMethodManager$Stub.onTransact:221 com.android.server.InputMethodManagerService.onTransact:873 
+V/WindowManager( 1677): Adding window Window{3620ba4 u0 AtchDlg:com.vphone.launcher/com.vphone.launcher.game.AdDetailActivity} at 4 of 7 (after Window{1543535b u0 com.vphone.launcher/com.vphone.launcher.game.AdDetailActivity})
+W/InputMethodManagerService( 1677): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@d717d09 attribute=null, token = android.os.BinderProxy@44f126a
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+I/art     ( 1677): Background sticky concurrent mark sweep GC freed 120577(5MB) AllocSpace objects, 5(80KB) LOS objects, 26% free, 15MB/20MB, paused 34.794ms total 76.907ms
+I/ProcessStatsService( 1677): Prepared write state in 59ms
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+I/art     ( 1943): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.exoplayer2.video.MediaCodecVideoRenderer$OnFrameRenderedListenerV23>
+I/art     ( 1943): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.exoplayer2.video.MediaCodecVideoRenderer$OnFrameRenderedListenerV23>
+I/art     ( 1943): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.exoplayer2.video.MediaCodecVideoRenderer$OnFrameRenderedListenerV23>
+I/art     ( 1943): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.exoplayer2.video.MediaCodecVideoRenderer$OnFrameRenderedListenerV23>
+I/art     ( 1943): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.exoplayer2.video.MediaCodecVideoRenderer$OnFrameRenderedListenerV23>
+I/ExoPlayerImpl( 1943): Init 30377776 [ExoPlayerLib/2.7.0] [shamu, HUAWEI MLA-AL10, HUAWEI, 22]
+E/HttpProxyCacheServer( 1943): connectable111111
+E/HttpProxyCacheServer( 1943): connectable22222
+E/HttpProxyCacheServer( 1943): connectable33333
+E/HttpProxyCacheServer( 1943): responsecode  :200
+W/AudioCapabilities( 1943): Unsupported mime audio/x-ms-wma
+W/AudioCapabilities( 1943): Unsupported mime audio/vnd.rn-realaudio
+W/AudioCapabilities( 1943): Unsupported mime audio/mpeg-L2
+W/AudioCapabilities( 1943): Unsupported mime audio/ac3
+W/AudioCapabilities( 1943): Unsupported mime audio/x-ape
+W/AudioCapabilities( 1943): Unsupported mime audio/vnd.dts
+W/AudioCapabilities( 1943): Unsupported mime audio/ffmpeg
+W/VideoCapabilities( 1943): Unsupported mime video/mpeg2
+W/VideoCapabilities( 1943): Unsupported mime video/x-ms-wmv
+W/VideoCapabilities( 1943): Unsupported mime video/vnd.rn-realvideo
+W/VideoCapabilities( 1943): Unsupported mime video/vc1
+W/VideoCapabilities( 1943): Unsupported mime video/x-flv
+W/VideoCapabilities( 1943): Unsupported mime video/divx
+W/VideoCapabilities( 1943): Unsupported mime video/ffmpeg
+I/VideoCapabilities( 1943): Unsupported profile 4 for video/mp4v-es
+D/MediaCodecInfo( 1943): NoSupport [sizeAndRate.support, 1920x1080x-1.0] [OMX.ffmpeg.h264.decoder, video/avc] [shamu, HUAWEI MLA-AL10, HUAWEI, 22]
+D/MediaCodecInfo( 1943): NoSupport [sizeAndRate.support, 1920x1080x-1.0] [OMX.ffmpeg.h264.decoder, video/avc] [shamu, HUAWEI MLA-AL10, HUAWEI, 22]
+I/OMXClient( 1943): Using client-side OMX mux.
+W/linker  ( 1943): libswscale.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+D/SoftFFmpegVideo( 1943): SoftFFmpegVideo component: OMX.ffmpeg.h264.decoder mMode: 0 appData: 0xb3f79040
+W/OMXNodeInstance( 1943): [1:ffmpeg.h264.decoder] component does not support metadata mode; using fallback
+E/ACodec  ( 1943): [OMX.ffmpeg.h264.decoder] storeMetaDataInBuffers failed w/ err -1010
+E/OMXNodeInstance( 1943): getExtensionIndex(1:ffmpeg.h264.decoder, OMX.google.android.index.prepareForAdaptivePlayback) ERROR: UnsupportedIndex(0x8000101a)
+W/ACodec  ( 1943): [OMX.ffmpeg.h264.decoder] prepareForAdaptivePlayback failed w/ err -1010
+E/OMXNodeInstance( 1943): getConfig(1:ffmpeg.h264.decoder, ConfigCommonOutputCrop(0x700000f)) ERROR: Undefined(0x80001001)
+D/SoftFFmpegVideo( 1943): begin to open ffmpeg decoder(h264) now
+D/SoftFFmpegVideo( 1943): open ffmpeg video decoder(h264) success
+I/OMXClient( 1943): Using client-side OMX mux.
+I/SoftAAC2( 1943): limiting to stereo output
+I/SoftFFmpegVideo( 1943): ffmpeg video port setting change event(320x240)->(1920x1080).
+E/OMXNodeInstance( 1943): getConfig(1:ffmpeg.h264.decoder, ConfigCommonOutputCrop(0x700000f)) ERROR: Undefined(0x80001001)
+D/        ( 1943): HostConnection::get() New Host Connection established 0x9d501770, tid 3194
+I/SoftAAC2( 1943): Reconfiguring decoder: 0->48000 Hz, 0->2 channels
+I/art     ( 1943): Background sticky concurrent mark sweep GC freed 39942(2MB) AllocSpace objects, 18(496KB) LOS objects, 3% free, 60MB/62MB, paused 539us total 183.166ms
+I/art     ( 1943): Background partial concurrent mark sweep GC freed 19566(1148KB) AllocSpace objects, 5(7MB) LOS objects, 21% free, 57MB/73MB, paused 18.726ms total 518.450ms
+W/art     ( 1943): Verification of void com.google.android.exoplayer2.video.VideoRendererEventListener$EventDispatcher$4.<init>(com.google.android.exoplayer2.video.VideoRendererEventListener$EventDispatcher, int, long) took 160.902ms
+W/ContextImpl( 1677): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1327 com.android.server.InputMethodManagerService.hideCurrentInputLocked:1992 com.android.server.InputMethodManagerService.windowGainedFocus:2082 com.android.internal.view.IInputMethodManager$Stub.onTransact:221 com.android.server.InputMethodManagerService.onTransact:873 
+I/Choreographer( 1943): Skipped 117 frames!  The application may be doing too much work on its main thread.
+I/Choreographer( 1943): Skipped 32 frames!  The application may be doing too much work on its main thread.
+I/art     ( 1943): Background sticky concurrent mark sweep GC freed 65901(3MB) AllocSpace objects, 3(193KB) LOS objects, 6% free, 68MB/73MB, paused 1.203ms total 166.581ms
+W/ActivityManager( 1677): Duplicate finish request for ActivityRecord{879d23f u0 com.vphone.launcher/.game.AdDetailActivity t1 f}
+I/ExoPlayerImpl( 1943): Release 30377776 [ExoPlayerLib/2.7.0] [shamu, HUAWEI MLA-AL10, HUAWEI, 22] [goog.exo.core, goog.exo.ui]
+W/art     ( 1943): Verification of int com.google.android.exoplayer2.C.generateAudioSessionIdV21(android.content.Context) took 116.429ms
+W/DebugConnManager( 1943): getNetworkInfo() on networkType 1
+I/art     ( 1677): Background sticky concurrent mark sweep GC freed 113171(4MB) AllocSpace objects, 4(67KB) LOS objects, 24% free, 15MB/20MB, paused 211us total 439.117ms
+I/UsageStatsService( 1677): User[0] Flushing usage stats to disk
+I/art     ( 1908): Background sticky concurrent mark sweep GC freed 41286(2MB) AllocSpace objects, 8(128KB) LOS objects, 25% free, 8MB/12MB, paused 148us total 199.400ms
+D/PhoneStatusBar( 1841): disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search >
+W/WindowManager( 1677): updateFocusedWindowLocked, focusedAppToken is null.
+D/PhoneStatusBar( 1841): disable: < expand icons* alerts system_info* back home recent clock search >
+W/InputMethodManagerService( 1677): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@1288ea1a attribute=null, token = android.os.BinderProxy@295dcd7
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 1ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+D/MDnsDS  ( 1448): MDnsSdListener::Monitor poll timed out
+D/MDnsDS  ( 1448): Going to poll with pollCount 1
+I/EntropyMixer( 1677): Writing entropy...
+I/ProcessStatsService( 1677): Prepared write state in 169ms
+W/art     ( 1677): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService$23.run() from ActivityManagerService.java:18592 waiters=0 for 169ms
+W/art     ( 1677): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService$23.run() from ActivityManagerService.java:18592 waiters=1 for 190ms
+I/ProcessStatsService( 1677): Prepared write state in 1ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 1ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/art     ( 1677): Background sticky concurrent mark sweep GC freed 148129(6MB) AllocSpace objects, 3(48KB) LOS objects, 25% free, 19MB/25MB, paused 325us total 208.336ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+D/MDnsDS  ( 1448): MDnsSdListener::Monitor poll timed out
+D/MDnsDS  ( 1448): Going to poll with pollCount 1
+I/EntropyMixer( 1677): Writing entropy...
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 1ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+I/ProcessStatsService( 1677): Prepared write state in 0ms
+D/MDnsDS  ( 1448): MDnsSdListener::Monitor poll timed out
+D/MDnsDS  ( 1448): Going to poll with pollCount 1
+I/ProcessStatsService( 1677): Prepared write state in 0ms
